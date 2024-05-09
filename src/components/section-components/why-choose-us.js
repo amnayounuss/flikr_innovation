@@ -76,7 +76,7 @@ class WhyChooseUs extends Component {
             <div className="service-one__single">
               <div className="service-one__top">
                 <div className="service-one__icon">
-                  <img src={publicUrl + "assets/images/shapes/service-i-1.png"} alt={imagealt} />
+                  <img src={publicUrl + "assets/images/shapes/service-i-4.png"} alt={imagealt} />
                 </div>
                 <div className="service-one__top-content">
                   <h3><Link to="/service-details">Mobile Application Development</Link></h3>
@@ -91,7 +91,7 @@ class WhyChooseUs extends Component {
             <div className="service-one__single">
               <div className="service-one__top">
                 <div className="service-one__icon">
-                  <img src={publicUrl + "assets/images/shapes/service-i-2.png"} alt={imagealt} />
+                  <img src={publicUrl + "assets/images/shapes/service-i-5.png"} alt={imagealt} />
                 </div>{/* /.service-one__icon */}
                 <div className="service-one__top-content">
                   <h3><Link to="/service-details">Designing</Link></h3>

@@ -96,6 +96,15 @@ h6 {
 	}
 }
 
+.bootstrap-select .dropdown-menu>li.selected>a {
+    background: black!important;
+    color: #fff;
+}
+.bootstrap-select .dropdown-menu>li>a:hover {
+    background: black!important;
+    color: #fff;
+    cursor: pointer;
+}
 
 
 .thm-btn {
@@ -1233,10 +1242,14 @@ h6 {
 
 .banner-one__moc {
 	position: absolute;
-	bottom: 175px;
-	right: 30px;
+	bottom: 322px;
+	right: 50px;
 	-webkit-animation: ImgBounce 5s ease-in-out 0s infinite alternate;
 	animation: ImgBounce 5s ease-in-out 0s infinite alternate;
+	width: 812px;
+	height: 743px;
+	border-radius: 100%;
+	
 }
 
 .banner-one .container-fluid {
@@ -2800,7 +2813,8 @@ h6 {
 	position: relative;
 	overflow: hidden;
 	border-radius: 18px;
-	background-color: #283c5d;
+	/* background-color: #283c5d; */
+	background-color: black!important;
 	text-align: center;
 	padding-left: 30px;
 	padding-right: 30px;
@@ -5211,7 +5225,17 @@ h6 {
 	margin-bottom: 45px;
 }
 
+/* .testimonials-one__content {
+	text-align: center;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 30px;
+	padding-bottom: 40px;
+	position: relative;
+	box-shadow: 0px 4px 35px 0px rgba(186, 186, 186, 0.34);
+} */
 .testimonials-one__content {
+	height: 500px;
 	text-align: center;
 	padding-left: 30px;
 	padding-right: 30px;
@@ -5220,6 +5244,24 @@ h6 {
 	position: relative;
 	box-shadow: 0px 4px 35px 0px rgba(186, 186, 186, 0.34);
 }
+.testimonials-one__content p {
+	margin: 0;
+	font-size: 14px;
+	height: 320px;
+	color: #7e8aa7;
+	overflow-y: scroll;
+}
+
+.testimonials-one__content p::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.testimonials-one__content p {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}		
+
 
 
 .testimonials-one__content::before {

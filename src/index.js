@@ -14,13 +14,15 @@ import PortfolioFull from './components/portfolio-full';
 import PortfolioMasonary from './components/portfolio-masonary';
 import PortfolioDetails from './components/portfolio-details';
 import Pricing from './components/pricing';
-import Faq from './components/faq';
+import Faq from './components/freeQuote';
 import Testimonial from './components/testimonial';
 import Team from './components/team';
 import BlogGrid from './components/blog-grid';
 import BlogList from './components/blog-list';
 import BlogDetails from './components/blog-details';
 import Contact from './components/contact';
+import TermsandConditions from './components/termsandCondition';
+import FreeQuote from './components/freeQuote';
 
 
 class Root extends Component {
@@ -35,20 +37,22 @@ class Root extends Component {
 	                    <Route exact path="/home-v4" component={HomeV4} /> */}
 	                    <Route path="/about" component={About} />
 	                    <Route path="/service" component={Service} />
-	                    {/* <Route path="/service-v2" component={ServiceV2} />
-	                    <Route path="/service-details" component={ServiceDetails} /> */}
+	                    <Route path="/service-v2" component={ServiceV2} />
+	                    <Route path="/service-details" component={ServiceDetails} />
 	                    <Route path="/portfolio-standard" component={PortfolioStandard} />
 	                    <Route path="/portfolio-full" component={PortfolioFull} />
 	                    <Route path="/portfolio-masonary" component={PortfolioMasonary} />
 	                    <Route path="/portfolio-details" component={PortfolioDetails} />
 	                    <Route path="/pricing" component={Pricing} />
-	                    <Route path="/faq" component={Faq} />
+	                    {/* <Route path="/faq" component={Faq} /> */}
+						<Route path="/free-quote" component={FreeQuote}/>
 	                    <Route path="/testimonial" component={Testimonial} />
 	                    <Route path="/team" component={Team} />
 	                    <Route path="/blog-grid" component={BlogGrid} />
 	                    {/* <Route path="/blog-list" component={BlogList} />
 	                    <Route path="/blog-details" component={BlogDetails} /> */}
 	                    <Route path="/contact" component={Contact} />
+						{/* <Route path="/terms-and-conditions" component={TermsandConditions}/> */}
 	                </Switch>
 	                </div>
                 </HashRouter>

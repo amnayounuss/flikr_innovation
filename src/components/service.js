@@ -8,17 +8,20 @@ import Brand from './section-components/brand-v4';
 import Case from './section-components/case';
 import Footer from './global-components/footer-v2';
 import TestimonialV5 from './section-components/testimonial-v5';
+import CTA from './section-components/cta';
+
 
 const ServiceV1 = () => {
     return <div>
         <Navbar />
         <PageHeader headertitle="Our Services"  />
         <Service />
-        <Cta />
-        <FaqV2 />
+        {/* <Cta /> */}
+        <CTA />
+        {/* <FaqV2 /> */}
         <TestimonialV5  />
-        <Brand />
-        <Case  customclass="case-one case-one__team-page case-one__service-page"/>
+        {/* <Brand /> */}
+        {/* <Case  customclass="case-one case-one__team-page case-one__service-page"/> */}
         <Footer />
     </div>
 }

@@ -11,7 +11,7 @@ class AboutStyleOne extends Component {
 
     return <section className="about-one  go-top">
 			  <div className="container">
-			    <img src={publicUrl+"assets/images/resources/cta-1-1.png"} alt={ imagealt } className="about-one__moc" />
+			    <img src={publicUrl+"assets/images/resources/cta-1-1.png"} alt={ imagealt } className="about-one__moc" style={{marginTop:'120px'}} />
 			    <div className="row justify-content-end">
 			      <div className="col-lg-6">
 			        <div className="about-one__content">

@@ -71,6 +71,8 @@ class PortFolioStandard extends Component {
               <li className="filter" data-filter=".branding"><span>Branding</span></li>
               <li className="filter" data-filter=".creative"><span>Creative</span></li>
               <li className="filter" data-filter=".minimal"><span>Minimal</span></li>
+
+              
             </ul>
             <div className="container-fluid">
               <div className="row gallery-content filter-layout">
@@ -146,7 +148,7 @@ class PortFolioStandard extends Component {
                       </div>
                     </div>
                   </div>{/* /.portfolio-three__single */}
-                </div>{/* /.col-md-4 col-sm-12 */}
+                </div>/.col-md-4 col-sm-12
                 <div className="col-lg-3 col-md-6 col-sm-12 masonary-item design">
                   <div className="portfolio-three__single">
                     <div className="portfolio-three__image">
@@ -223,6 +225,20 @@ class PortFolioStandard extends Component {
                       <img src={publicUrl+"assets/images/portfolio/portfolio-4-11.jpg"} alt="" />
                     </div>{/* /.portfolio-three__image */}
                     <div className="portfolio-three__content">
+                      <div className="portfolio-three__content-inner">
+                        <Link to="/portfolio-details" className="portfolio-three__link"><i className="fa fa-long-arrow-alt-right" /></Link>
+                        <h3><Link to="/portfolio-details">Creative Work</Link></h3>
+                        <p><Link to="/portfolio-details">Design.</Link><Link to="/portfolio-details">Branding</Link></p>
+                      </div>
+                    </div>
+                  </div>{/* /.portfolio-three__single */}
+                </div>{/* /.col-md-4 col-sm-12 */}
+                <div className="col-lg-3 col-md-6 col-sm-12 masonary-item">
+                  <div className="portfolio-three__single">
+                    <div className="portfolio-three__image">
+                      <img src={ publicUrl+ "assets/images/portfolio/portfolio-4-12.jpg" }alt="" />
+                    </div>{/* /.portfolio-three__image */}
+                     <div className="portfolio-three__content">
                       <div className="portfolio-three__content-inner">
                         <Link to="/portfolio-details" className="portfolio-three__link"><i className="fa fa-long-arrow-alt-right" /></Link>
                         <h3><Link to="/portfolio-details">Creative Work</Link></h3>

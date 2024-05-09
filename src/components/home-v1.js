@@ -18,10 +18,10 @@ const Home_V1 = () => {
     return <div>
         <Navbar />
         <Banner />
-        <Brand />
+        {/* <Brand /> */}
         <WhyChooseUs />
         <AboutStyleOne />
-        <Team />
+        {/* <Team /> */}
         <Portfolio />
         <Funfact />
         <Testimonial />

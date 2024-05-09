@@ -10,7 +10,7 @@ const PortfolioStandard = () => {
         <Navbar />
         <PageHeader headertitle="Portfolio Standard"  />
         <Portfolio />
-        <Cta />
+        {/* <Cta /> */}
         <Footer />
     </div>
 }

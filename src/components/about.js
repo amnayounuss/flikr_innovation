@@ -17,9 +17,9 @@ const AboutPage = () => {
         <About />
         <FunfactV4 />
         <Cta />
-        <Team />
-        <Testimonial />
-        <Brand />
+        {/* <Team /> */}
+        <Testimonial   />
+        {/* <Brand /> */}
         <AboutV6 />
         <Footer />
     </div>

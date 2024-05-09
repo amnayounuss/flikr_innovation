@@ -24,8 +24,13 @@ class NavbarV2 extends Component {
 			          <li>
 			            <Link to="/about">About</Link>
 			          </li>
-			          <li>
-			            <Link to="/service">Services</Link>
+			          <li className="dropdown">
+			            <a href="#">Services</a>
+			            <ul>
+			              <li><Link to="/service">Services 01</Link></li>
+			              <li><Link to="/service-v2">Services 02</Link></li>
+			              <li><Link to="/service-details">Services Details</Link></li>
+			            </ul>{/* /.sub-menu */}
 			          </li>
 			           <li className="dropdown">
 			            <a href="#">Work</a>
@@ -40,9 +45,9 @@ class NavbarV2 extends Component {
 			            <a href="#">Pages</a>
 			            <ul>
 			              <li><Link to="/pricing">Pricing</Link></li>
-			              <li><Link to="/faq">FAQ</Link></li>
+			              <li><Link to="/free-quote">Free Quote</Link></li>
 			              <li><Link to="/testimonial">Testimonials</Link></li>
-			              <li><Link to="/team">Team</Link></li>
+			              {/* <li><Link to="/team">Team</Link></li> */}
 			            </ul>{/* /.sub-menu */}
 			          </li>
 			           <li>
