@@ -19,33 +19,33 @@ class PortfolioONe extends Component {
 			    <div className="row">
 			      <div className="col-lg-4">
 			        <div className="portfolio-one__single">
-			          <img src={publicUrl+"assets/images/portfolio/portfolio-1-1.jpg"} alt={ imagealt } />
+						<img src={publicUrl +"assets/images/portfolio/portfolio-4-1.png"} alt={ imagealt } />
 			          <div className="portfolio-one__content">
 			            <div className="portfolio-one__content-inner">
-			              <h3><Link to="/portfolio-details">Creative Arts</Link></h3>
-			              <p>Design, Branding</p>
+								<h3><Link to="/portfolio-details">Creative App</Link></h3>
+			              <p>Mobile Application</p>
 			            </div>{/* /.portfolio-one__content-inner */}
 			          </div>{/* /.portfolio-one__content */}
 			        </div>{/* /.portfolio-one__single */}
 			      </div>{/* /.col-lg-4 */}
 			      <div className="col-lg-4">
 			        <div className="portfolio-one__single">
-			          <img src={publicUrl+"assets/images/portfolio/portfolio-1-2.jpg"} alt={ imagealt } />
+						<img src={publicUrl +"assets/images/portfolio/ebook.jpg"} alt={ imagealt } />
 			          <div className="portfolio-one__content">
 			            <div className="portfolio-one__content-inner">
-			              <h3><Link to="/portfolio-details">Creative Arts</Link></h3>
-			              <p>Design, Branding</p>
+			              <h3><Link to="/portfolio-details">Creative ebook</Link></h3>
+			              <p>ebook</p>
 			            </div>{/* /.portfolio-one__content-inner */}
 			          </div>{/* /.portfolio-one__content */}
 			        </div>{/* /.portfolio-one__single */}
 			      </div>{/* /.col-lg-4 */}
 			      <div className="col-lg-4">
 			        <div className="portfolio-one__single">
-			          <img src={publicUrl+"assets/images/portfolio/portfolio-1-3.jpg"} alt={ imagealt } />
+						<img src={publicUrl +"assets/images/portfolio/website.jpg"} alt={ imagealt } />
 			          <div className="portfolio-one__content">
 			            <div className="portfolio-one__content-inner">
-			              <h3><Link to="/portfolio-details">Creative Arts</Link></h3>
-			              <p>Design, Branding</p>
+			              <h3><Link to="/portfolio-details">Creative website</Link></h3>
+			              <p>website</p>
 			            </div>{/* /.portfolio-one__content-inner */}
 			          </div>{/* /.portfolio-one__content */}
 			        </div>{/* /.portfolio-one__single */}

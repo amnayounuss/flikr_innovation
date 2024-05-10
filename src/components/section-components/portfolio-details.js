@@ -22,7 +22,7 @@ class PortFolioDetails extends Component {
             suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in
             ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum</p>
           <br />
-          <img src={publicUrl+"assets/images/portfolio/portfolio-d-1.jpg"} alt={ imagealt } className="img-fluid" />
+        <img src={publicUrl +"assets/images/portfolio/portfolio-4-1.png"} alt={ imagealt } className="img-fluid" />
           <br />
           <br />
           <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I

@@ -55,10 +55,10 @@ class Footer_v2 extends Component {
 										</ul>{/* /.footer-widget__contact-list */}
 									</ul>{/* /.footer-widget__links-list */}
 									<div className="footer-widget__social">
-										<a href="https://www.facebook.com/Flikrinnovation"><i className="fab fa-facebook-f" /></a>
-										<a href="/"><i className="fab fa-twitter" /></a>
-										<a href="https://www.instagram.com/flikr.innovation/"><i className="fab fa-google-plus-g" /></a>
-										<a href="/"><i className="fab fa-behance" /></a>
+										<a target='blank' href="https://www.facebook.com/Flikrinnovation"><i className="fab fa-facebook-f" /></a>
+										<a target='blank' href="/"><i className="fab fa-twitter" /></a>
+										<a target='blank' href="https://www.instagram.com/flikr.innovation/"><i className="fab fa-google-plus-g" /></a>
+										<a  href="/"><i className="fab fa-behance" /></a>
 									</div>{/* /.footer-widget__social */}
 								</div>{/* /.footer-widget footer-widget__post */}
 							</div>{/* /.col-lg-3 */}

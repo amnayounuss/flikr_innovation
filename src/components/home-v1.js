@@ -26,7 +26,7 @@ const Home_V1 = () => {
         <Funfact />
         <Testimonial />
         <CTA />
-        <PostSlider />
+        {/* <PostSlider /> */}
         <Footer_v2/>
 
     </div>

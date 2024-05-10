@@ -19,7 +19,7 @@ class RelatedProject extends Component {
               <div className="col-lg-3 col-md-6 col-sm-12 design masonary-item">
                 <div className="portfolio-three__single">
                   <div className="portfolio-three__image">
-                    <img src={publicUrl+"assets/images/portfolio/portfolio-4-1.jpg"} alt={ imagealt } />
+                    <img src={publicUrl+"assets/images/portfolio/portfolio-4-1.png"} alt={ imagealt } />
                   </div>
                   <div className="portfolio-three__content">
                     <div className="portfolio-three__content-inner">
