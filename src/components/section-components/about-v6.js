@@ -8,7 +8,7 @@ class AboutV6 extends Component {
 
 		let publicUrl = process.env.PUBLIC_URL + '/'
 		let imagealt = 'image'
-		let videoealt = publicUrl + "assets/images/resources/banner-1-1.mp4";
+		let videoealt = publicUrl + "assets/images/resources/avideo.mp4";
 
 		return <section className="about-three about-three__about-page  go-top">
 			<div className="container">
@@ -32,7 +32,7 @@ class AboutV6 extends Component {
 					</div>{/* /.col-lg-6 */}
 					<div className="col-xl-6 d-flex justify-content-center">
 						<div className="video-one__box">
-							<img src={publicUrl + "assets/images/resources/video-4-1.png"} alt={imagealt} />
+							<img src={publicUrl + "assets/images/resources/about1.png"} alt={imagealt} />
 							<a href={videoealt} className="video-popup video-one__btn"><i className="fa fa-play" /></a>{/* /.video-popup video-one__btn */}
 						</div>{/* /.video-one__box */}
 					</div>{/* /.col-lg-6 */}

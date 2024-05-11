@@ -41,7 +41,7 @@ class PortfolioONe extends Component {
 			      </div>{/* /.col-lg-4 */}
 			      <div className="col-lg-4">
 			        <div className="portfolio-one__single">
-						<img src={publicUrl +"assets/images/portfolio/website.jpg"} alt={ imagealt } />
+						<img src={publicUrl +"assets/images/portfolio/w10.jpg"} alt={ imagealt } />
 			          <div className="portfolio-one__content">
 			            <div className="portfolio-one__content-inner">
 			              <h3><Link to="/portfolio-details">Creative website</Link></h3>
