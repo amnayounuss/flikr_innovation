@@ -21,7 +21,7 @@ class SEO extends Component {
             <React.Fragment>
                 {/* Map over the printing data and render each item dynamically */}
                 {seos.map(seo => (
-                    <div key={seo.id} className="col-lg-3 col-md-6 col-sm-12 design masonary-item">
+                    <div key={seo.id} className="col-lg-3 col-md-6 col-sm-12 seo masonary-item">
                         <div className="portfolio-three__single">
                             <div className="portfolio-three__image">
                                 <img src={publicUrl + "assets/images/portfolio/seo/" + seo.image} alt={imagealt} />
@@ -30,7 +30,7 @@ class SEO extends Component {
                                 <div className="portfolio-three__content-inner">
                                     <Link to="/portfolio-details" className="portfolio-three__link"><i className="fa fa-long-arrow-alt-right" /></Link>
                                     <h3><Link to="/portfolio-details">Printing Work</Link></h3>
-                                    <p><Link to="/portfolio-details">Design.</Link><Link to="/portfolio-details">Branding</Link></p>
+                                    <p><Link to="/portfolio-details">Perform.</Link><Link to="/portfolio-details">SEO</Link></p>
                                 </div>
                             </div>
                         </div>

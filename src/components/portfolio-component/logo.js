@@ -24,7 +24,7 @@ class Logo extends Component {
             <React.Fragment>
                 {/* Map over the logos array and render each logo dynamically */}
                 {logos.map(logo => (
-                    <div key={logo.id} className="col-lg-3 col-md-6 col-sm-12 design masonary-item">
+                    <div key={logo.id} className="col-lg-3 col-md-6 col-sm-12 logo masonary-item">
                         <div className="portfolio-three__single">
                             <div className="portfolio-three__image">
                                 <img src={publicUrl + "assets/images/portfolio/logo/" + logo.image} alt={imagealt} />
@@ -33,7 +33,7 @@ class Logo extends Component {
                                 <div className="portfolio-three__content-inner">
                                     <Link to="/portfolio-details" className="portfolio-three__link"><i className="fa fa-long-arrow-alt-right" /></Link>
                                     <h3><Link to="/portfolio-details">Logo Design</Link></h3>
-                                    <p><Link to="/portfolio-details">Design.</Link><Link to="/portfolio-details">Branding</Link></p>
+                                    <p><Link to="/portfolio-details">Design.</Link><Link to="/portfolio-details">Logo</Link></p>
                                 </div>
                             </div>
                         </div>

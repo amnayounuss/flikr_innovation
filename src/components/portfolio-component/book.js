@@ -25,7 +25,7 @@ class Book extends Component {
             <React.Fragment>
                 {/* Map over the books array and render each book dynamically */}
                 {books.map(book => (
-                    <div key={book.id} className="col-lg-3 col-md-6 col-sm-12 design masonary-item">
+                    <div key={book.id} className="col-lg-3 col-md-6 col-sm-12 book masonary-item">
                         <div className="portfolio-three__single">
                             <div className="portfolio-three__image">
                                 <img src={publicUrl + "assets/images/portfolio/book/" + book.image} alt={imagealt} />
@@ -34,7 +34,7 @@ class Book extends Component {
                                 <div className="portfolio-three__content-inner">
                                     <Link to="/portfolio-details" className="portfolio-three__link"><i className="fa fa-long-arrow-alt-right" /></Link>
                                     <h3><Link to="/portfolio-details">Creative Work</Link></h3>
-                                    <p><Link to="/portfolio-details">Design.</Link><Link to="/portfolio-details">Branding</Link></p>
+                                    <p><Link to="/portfolio-details">Design.</Link><Link to="/portfolio-details">Book</Link></p>
                                 </div>
                             </div>
                         </div>

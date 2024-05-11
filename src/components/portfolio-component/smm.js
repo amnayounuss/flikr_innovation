@@ -24,7 +24,7 @@ class Marketing extends Component {
             <React.Fragment>
                 {/* Map over the marketingImages array and render each image dynamically */}
                 {marketingImages.map(image => (
-                    <div key={image.id} className="col-lg-3 col-md-6 col-sm-12 design masonary-item">
+                    <div key={image.id} className="col-lg-3 col-md-6 col-sm-12 smm masonary-item">
                         <div className="portfolio-three__single">
                             <div className="portfolio-three__image">
                                 <img src={publicUrl + "assets/images/portfolio/smm/" + image.image} alt={imagealt} />
@@ -33,7 +33,7 @@ class Marketing extends Component {
                                 <div className="portfolio-three__content-inner">
                                     <Link to="/portfolio-details" className="portfolio-three__link"><i className="fa fa-long-arrow-alt-right" /></Link>
                                     <h3><Link to="/portfolio-details">Marketing Image</Link></h3>
-                                    <p><Link to="/portfolio-details">Design.</Link><Link to="/portfolio-details">Branding</Link></p>
+                                    <p><Link to="/portfolio-details">Perform.</Link><Link to="/portfolio-details">Marketing</Link></p>
                                 </div>
                             </div>
                         </div>

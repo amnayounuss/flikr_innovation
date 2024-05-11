@@ -24,7 +24,7 @@ class Printing extends Component {
             <React.Fragment>
                 {/* Map over the printing data and render each item dynamically */}
                 {printings.map(printing => (
-                    <div key={printing.id} className="col-lg-3 col-md-6 col-sm-12 design masonary-item">
+                    <div key={printing.id} className="col-lg-3 col-md-6 col-sm-12 printing masonary-item">
                         <div className="portfolio-three__single">
                             <div className="portfolio-three__image">
                                 <img src={publicUrl + "assets/images/portfolio/printing/" + printing.image} alt={imagealt} />

@@ -18,7 +18,7 @@ class Video extends Component {
             <React.Fragment>
                 {/* Map over the videos array and render each video dynamically */}
                 {videos.map(video => (
-                    <div key={video.id} className="col-lg-3 col-md-6 col-sm-12 design masonary-item">
+                    <div key={video.id} className="col-lg-3 col-md-6 col-sm-12 video masonary-item">
                         <div className="portfolio-three__single">
                             <div className="portfolio-three__image">
                                 <video width="100%" controls>
@@ -30,7 +30,7 @@ class Video extends Component {
                                 <div className="portfolio-three__content-inner">
                                     <Link to="/portfolio-details" className="portfolio-three__link"><i className="fa fa-long-arrow-alt-right" /></Link>
                                     <h3><Link to="/portfolio-details">Video Thumbnail</Link></h3>
-                                    <p><Link to="/portfolio-details">Design.</Link><Link to="/portfolio-details">Branding</Link></p>
+                                    <p><Link to="/portfolio-details">Animate.</Link><Link to="/portfolio-details">Video</Link></p>
                                 </div>
                             </div>
                         </div>

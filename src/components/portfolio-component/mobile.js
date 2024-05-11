@@ -24,7 +24,7 @@ class Mobile extends Component {
             <React.Fragment>
                 {/* Map over the mobiles array and render each mobile dynamically */}
                 {mobiles.map(mobile => (
-                    <div key={mobile.id} className="col-lg-3 col-md-6 col-sm-12 design masonary-item">
+                    <div key={mobile.id} className="col-lg-3 col-md-6 col-sm-12 mobile masonary-item">
                         <div className="portfolio-three__single">
                             <div className="portfolio-three__image">
                                 <img src={publicUrl + "assets/images/portfolio/mobile/" + mobile.image} alt={imagealt} />
@@ -33,7 +33,7 @@ class Mobile extends Component {
                                 <div className="portfolio-three__content-inner">
                                     <Link to="/portfolio-details" className="portfolio-three__link"><i className="fa fa-long-arrow-alt-right" /></Link>
                                     <h3><Link to="/portfolio-details">Creative Work</Link></h3>
-                                    <p><Link to="/portfolio-details">Design.</Link><Link to="/portfolio-details">Branding</Link></p>
+                                    <p><Link to="/portfolio-details">Develop.</Link><Link to="/portfolio-details">App</Link></p>
                                 </div>
                             </div>
                         </div>

@@ -34,7 +34,7 @@ class FreeQuoteV1 extends Component {
                                       <div className="col-lg-12">
                                           <div className="contact-one__input-group">
                                               <select className="selectpicker">
-                                                  <option value="" disabled>Select a Service</option>
+                                                  <option value="" selected disabled>Select a Service</option>
                                                   <option value="website-development">Website Development</option>
                                                   <option value="logo-design">Logo Design</option>
                                                   <option value="ebook">E-Book</option>

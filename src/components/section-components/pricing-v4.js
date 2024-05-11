@@ -26,10 +26,10 @@ class PricingV4 extends Component {
                 <a href="#website" className="nav-link" data-toggle="tab">Websites</a>
               </li>
               <li className="nav-item">
-                <a href="#socialmedia" className="nav-link " data-toggle="tab">Social Media Marketing</a>
+                <a href="#socialmedia" className="nav-link " data-toggle="tab">SMM</a>
               </li>
               <li className="nav-item">
-                <a href="#video" className="nav-link " data-toggle="tab">Video Animation</a>
+                <a href="#video" className="nav-link " data-toggle="tab">Animation</a>
               </li>
               <li className="nav-item">
                 <a href="#seo" className="nav-link " data-toggle="tab">SEO</a>
@@ -38,13 +38,13 @@ class PricingV4 extends Component {
                 <a href="#ppc" className="nav-link " data-toggle="tab">PPC</a>
               </li>
               <li className="nav-item">
-                <a href="#influencer" className="nav-link " data-toggle="tab">Influencer Marketing</a>
+                <a href="#influencer" className="nav-link " data-toggle="tab">Marketing</a>
               </li>
               <li className="nav-item">
-                <a href="#mobile" className="nav-link " data-toggle="tab">Mobile Apps</a>
+                <a href="#mobile" className="nav-link " data-toggle="tab">Apps</a>
               </li>
               <li className="nav-item">
-                <a href="#content" className="nav-link " data-toggle="tab">Content Writing</a>
+                <a href="#content" className="nav-link " data-toggle="tab">Writing</a>
               </li>
               <li className="nav-item">
                 <a href="#ebook" className="nav-link " data-toggle="tab">E-Book</a>

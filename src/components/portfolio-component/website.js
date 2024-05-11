@@ -25,7 +25,7 @@ class Website extends Component {
             <React.Fragment>
                 {/* Map over the websites array and render each website dynamically */}
                 {websites.map(website => (
-                    <div key={website.id} className="col-lg-3 col-md-6 col-sm-12 design masonary-item">
+                    <div key={website.id} className="col-lg-3 col-md-6 col-sm-12 website masonary-item">
                         <div className="portfolio-three__single">
                             <div className="portfolio-three__image">
                                 <img src={publicUrl + "assets/images/portfolio/website/" + website.image} alt={imagealt} />
@@ -34,7 +34,7 @@ class Website extends Component {
                                 <div className="portfolio-three__content-inner">
                                     <Link to="/portfolio-details" className="portfolio-three__link"><i className="fa fa-long-arrow-alt-right" /></Link>
                                     <h3><Link to="/portfolio-details">Creative Work</Link></h3>
-                                    <p><Link to="/portfolio-details">Design.</Link><Link to="/portfolio-details">Branding</Link></p>
+                                    <p><Link to="/portfolio-details">Develop.</Link><Link to="/portfolio-details">Website</Link></p>
                                 </div>
                             </div>
                         </div>
