@@ -8235,6 +8235,11 @@ h6 {
 	overflow: hidden;
 	position: relative;
 }
+.pricing-one__single ul {
+	text-align: left;
+	margin-left: 20px;
+}
+
 
 .pricing-one__corner-ribbon {
 	width: 200px;
@@ -8256,7 +8261,7 @@ h6 {
 
 .pricing-one__btn-block {
 	width: 100%;
-	max-width: 500px;
+	/* max-width: 500px; */
 	border-radius: 35px;
 	padding: 10px;
 	background-color: #fff;

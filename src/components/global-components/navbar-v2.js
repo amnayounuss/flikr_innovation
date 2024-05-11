@@ -50,9 +50,9 @@ class NavbarV2 extends Component {
 			              {/* <li><Link to="/team">Team</Link></li> */}
 			            </ul>{/* /.sub-menu */}
 			          </li>
-			           <li>
+			           {/* <li>
 			            <Link to="/blog-grid">News</Link>
-			          </li>
+			          </li> */}
 			          <li>
 			            <Link to="/contact">Contact</Link>
 			          </li>
