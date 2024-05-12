@@ -34,7 +34,7 @@ class PortfolioONe extends Component {
 			          <div className="portfolio-one__content">
 			            <div className="portfolio-one__content-inner">
 			              <h3><Link to="/portfolio-details">Creative ebook</Link></h3>
-			              <p>ebook</p>
+			              <p>E-Book</p>
 			            </div>{/* /.portfolio-one__content-inner */}
 			          </div>{/* /.portfolio-one__content */}
 			        </div>{/* /.portfolio-one__single */}
@@ -45,14 +45,14 @@ class PortfolioONe extends Component {
 			          <div className="portfolio-one__content">
 			            <div className="portfolio-one__content-inner">
 			              <h3><Link to="/portfolio-details">Creative website</Link></h3>
-			              <p>website</p>
+			              <p>Website</p>
 			            </div>{/* /.portfolio-one__content-inner */}
 			          </div>{/* /.portfolio-one__content */}
 			        </div>{/* /.portfolio-one__single */}
 			      </div>{/* /.col-lg-4 */}
 			    </div>{/* /.row */}
 			    <div className="portfolio-one__more-btn__block text-center">
-			      <Link to="/portfolio-full" className="thm-btn portfolio-one__more-btn">View More <i className="fa fa-angle-double-right" /></Link>
+			      <Link to="/portfolio-standard" className="thm-btn portfolio-one__more-btn">View More <i className="fa fa-angle-double-right" /></Link>
 			      {/* /.thm-btn */}
 			    </div>{/* /.portfolio-one__more-btn__block */}
 			  </div>{/* /.container */}

@@ -32,9 +32,9 @@ class Website extends Component {
                             </div>
                             <div className="portfolio-three__content">
                                 <div className="portfolio-three__content-inner">
-                                    <Link to="/portfolio-details" className="portfolio-three__link"><i className="fa fa-long-arrow-alt-right" /></Link>
-                                    <h3><Link to="/portfolio-details">Creative Work</Link></h3>
-                                    <p><Link to="/portfolio-details">Develop.</Link><Link to="/portfolio-details">Website</Link></p>
+                                    <Link to="/pricing" className="portfolio-three__link"><i className="fa fa-long-arrow-alt-right" /></Link>
+                                    <h3><Link to="/pricing">Creative Work</Link></h3>
+                                    <p><Link to="/pricing">Develop.</Link><Link to="/portfolio-details">Website</Link></p>
                                 </div>
                             </div>
                         </div>

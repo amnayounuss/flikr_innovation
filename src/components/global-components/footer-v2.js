@@ -35,7 +35,7 @@ class Footer_v2 extends Component {
 									<Link to="/">
 										<img src={publicUrl + "assets/images/logo-2-1.png"} alt={imgattr} style={{ width: '250px', height: '65px' }} />
 									</Link>
-									<p>But we must ipsum dolor sit amet con sectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim</p>
+									<p>Elevating brands through digital mastery. From captivating designs to seamless user experiences, we redefine online presence. Trust us to amplify your brand's impact in the digital world.</p>
 								</div>{/* /.footer-widget footer-widget__about */}
 							</div>{/* /.col-lg-3 */}
 							<div className="col-xl-3 col-lg-6">
@@ -57,8 +57,8 @@ class Footer_v2 extends Component {
 									<div className="footer-widget__social">
 										<a target='blank' href="https://www.facebook.com/Flikrinnovation"><i className="fab fa-facebook-f" /></a>
 										<a target='blank' href="/"><i className="fab fa-twitter" /></a>
-										<a target='blank' href="https://www.instagram.com/flikr.innovation/"><i className="fab fa-google-plus-g" /></a>
-										<a  href="/"><i className="fab fa-behance" /></a>
+										<a target='blank' href="https://www.instagram.com/flikr.innovation/"><i className="fab fa-brands fa-instagram" /></a>
+										<a  href="/"><i className="fab fa-brands fa-pinterest" /></a>
 									</div>{/* /.footer-widget__social */}
 								</div>{/* /.footer-widget footer-widget__post */}
 							</div>{/* /.col-lg-3 */}
@@ -69,8 +69,8 @@ class Footer_v2 extends Component {
 										<li><Link to="/about">About Us</Link></li>
 										<li><Link to="/service">Our Services</Link></li>
 										<li><Link to="/contact">Need a Job?</Link></li>
-										<li><Link to="/blog-grid">Latest Blog</Link></li>
-										<li><Link to="/contact">Get a Quote</Link></li>
+										{/* <li><Link to="/blog-grid">Latest Blog</Link></li> */}
+										<li><Link to="/free-quote">Get a Quote</Link></li>
 									</ul>{/* /.footer-widget__links-list */}
 								</div>{/* /.footer-widget footer-widget__post */}
 							</div>{/* /.col-lg-3 */}

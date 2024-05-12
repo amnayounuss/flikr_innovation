@@ -31,9 +31,9 @@ class Marketing extends Component {
                             </div>
                             <div className="portfolio-three__content">
                                 <div className="portfolio-three__content-inner">
-                                    <Link to="/portfolio-details" className="portfolio-three__link"><i className="fa fa-long-arrow-alt-right" /></Link>
-                                    <h3><Link to="/portfolio-details">Marketing Image</Link></h3>
-                                    <p><Link to="/portfolio-details">Perform.</Link><Link to="/portfolio-details">Marketing</Link></p>
+                                    <Link to="/pricing" className="portfolio-three__link"><i className="fa fa-long-arrow-alt-right" /></Link>
+                                    <h3><Link to="/pricing">Marketing Image</Link></h3>
+                                    <p><Link to="/pricing">Perform.</Link><Link to="/portfolio-details">Marketing</Link></p>
                                 </div>
                             </div>
                         </div>

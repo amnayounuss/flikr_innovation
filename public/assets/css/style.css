@@ -1243,13 +1243,14 @@ h6 {
 
 .banner-one__moc {
 	position: absolute;
-	bottom: 322px;
+	bottom: -350px;
+	/* margin-top: 300px; */
 	right: 50px;
 	-webkit-animation: ImgBounce 5s ease-in-out 0s infinite alternate;
 	animation: ImgBounce 5s ease-in-out 0s infinite alternate;
 	width: 812px;
-	height: 743px;
-	border-radius: 100%;
+	height: 2000px;
+	border-radius: 70% 0% 0% 0%;
 	
 }
 

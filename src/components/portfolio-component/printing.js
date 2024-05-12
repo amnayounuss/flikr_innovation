@@ -31,9 +31,9 @@ class Printing extends Component {
                             </div>
                             <div className="portfolio-three__content">
                                 <div className="portfolio-three__content-inner">
-                                    <Link to="/portfolio-details" className="portfolio-three__link"><i className="fa fa-long-arrow-alt-right" /></Link>
-                                    <h3><Link to="/portfolio-details">Printing Work</Link></h3>
-                                    <p><Link to="/portfolio-details">Design.</Link><Link to="/portfolio-details">Branding</Link></p>
+                                    <Link to="/pricing" className="portfolio-three__link"><i className="fa fa-long-arrow-alt-right" /></Link>
+                                    <h3><Link to="/pricing">Printing Work</Link></h3>
+                                    <p><Link to="/pricing">Design.</Link><Link to="/portfolio-details">Branding</Link></p>
                                 </div>
                             </div>
                         </div>

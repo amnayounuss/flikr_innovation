@@ -28,9 +28,9 @@ class Video extends Component {
                             </div>
                             <div className="portfolio-three__content">
                                 <div className="portfolio-three__content-inner">
-                                    <Link to="/portfolio-details" className="portfolio-three__link"><i className="fa fa-long-arrow-alt-right" /></Link>
-                                    <h3><Link to="/portfolio-details">Video Thumbnail</Link></h3>
-                                    <p><Link to="/portfolio-details">Animate.</Link><Link to="/portfolio-details">Video</Link></p>
+                                    <Link to="/pricing" className="portfolio-three__link"><i className="fa fa-long-arrow-alt-right" /></Link>
+                                    <h3><Link to="/pricing">Video Thumbnail</Link></h3>
+                                    <p><Link to="/pricing">Animate.</Link><Link to="/portfolio-details">Video</Link></p>
                                 </div>
                             </div>
                         </div>

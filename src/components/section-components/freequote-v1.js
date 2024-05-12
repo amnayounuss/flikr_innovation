@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import parse from 'html-react-parser';
 
+
 class FreeQuoteV1 extends Component {
 
   render() {
@@ -14,7 +15,7 @@ class FreeQuoteV1 extends Component {
               <div className="container">
                   <div className="row">
                   <div className='col-lg-3'></div>
-                      <div className="col-lg-6" style={{border:' 1px solid grey', padding: '0px 50px 50px 50px'}}>
+                      <div className="col-lg-6" style={{border:' 1px solid #D8D8D8', borderRadius: '25px', padding: '0px 50px 50px 50px'}}>
                           <div className="faq-one__form-wrap">
                               <form action="#" className="contact-one__form">
                                   <h3>Let’s Create Something Extraordinary Together</h3>

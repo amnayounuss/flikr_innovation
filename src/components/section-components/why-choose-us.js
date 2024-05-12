@@ -25,7 +25,7 @@ class WhyChooseUs extends Component {
                   <img src={publicUrl + "assets/images/shapes/service-i-1.png"} alt={imagealt} />
                 </div>
                 <div className="service-one__top-content">
-                  <h3><Link to="/service-details">Business Strategy &amp; Market Research</Link></h3>
+                  <h3><Link to="/portfolio-standard">Business Strategy &amp; Market Research</Link></h3>
                   <p>Digital Marketing</p>
                 </div>
               </div>
@@ -40,7 +40,7 @@ class WhyChooseUs extends Component {
                   <img src={publicUrl + "assets/images/shapes/service-i-2.png"} alt={imagealt} />
                 </div>{/* /.service-one__icon */}
                 <div className="service-one__top-content">
-                  <h3><Link to="/service-details">SEO, PPC &amp; Social
+                  <h3><Link to="/portfolio-standard">SEO, PPC &amp; Social
                     Media Soluation</Link></h3>
                   <p>SEO Optimization</p>
                 </div>
@@ -56,7 +56,7 @@ class WhyChooseUs extends Component {
                   <img src={publicUrl + "assets/images/shapes/service-i-3.png"} alt={imagealt} />
                 </div>{/* /.service-one__icon */}
                 <div className="service-one__top-content">
-                  <h3><Link to="/service-details">Web Design And
+                  <h3><Link to="/portfolio-standard">Web Design And
                     Development</Link></h3>
                   <p>Web Soluations</p>
                 </div>
@@ -79,7 +79,7 @@ class WhyChooseUs extends Component {
                   <img src={publicUrl + "assets/images/shapes/service-i-4.png"} alt={imagealt} />
                 </div>
                 <div className="service-one__top-content">
-                  <h3><Link to="/service-details">Mobile Application Development</Link></h3>
+                  <h3><Link to="/portfolio-standard">Mobile Application Development</Link></h3>
                   <p>App Development</p>
                 </div>
               </div>
@@ -94,7 +94,7 @@ class WhyChooseUs extends Component {
                   <img src={publicUrl + "assets/images/shapes/service-i-5.png"} alt={imagealt} />
                 </div>{/* /.service-one__icon */}
                 <div className="service-one__top-content">
-                  <h3><Link to="/service-details">Designing</Link></h3>
+                  <h3><Link to="/portfolio-standard">Designing</Link></h3>
                   <p>Graphic Designing</p>
                 </div>
               </div>

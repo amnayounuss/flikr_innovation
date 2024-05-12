@@ -26,7 +26,7 @@ class AboutV6 extends Component {
 								campaigns, we are your one-stop destination for all things digital. Let us partner with
 								you to unlock the full potential of your brand in the digital landscape. </p>
 
-							<Link to="/service-details" className="thm-btn about-three__btn">Read More <i className="fa fa-angle-double-right" /></Link>
+							<Link to="/about" className="thm-btn about-three__btn">Read More <i className="fa fa-angle-double-right" /></Link>
 						
 						</div>
 					</div>{/* /.col-lg-6 */}
