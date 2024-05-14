@@ -8037,6 +8037,7 @@ h6 {
 	display: flex;
 	-webkit-box-align: center;
 	align-items: center;
+	color: var(--thm-base);
 }
 
 .contact-one__form .dropdown-toggle::after {
@@ -8271,6 +8272,8 @@ h6 {
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
+
+
 
 
 .pricing-one__corner-ribbon {
