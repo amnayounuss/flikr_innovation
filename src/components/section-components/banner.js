@@ -41,7 +41,7 @@ class Banner extends Component {
                 <div className="container-fluid">
                     <div className="row">
                         <div className="col-lg-6">
-                            <div className="banner-one__content">
+                            <div className="banner-one__content ">
                                 <h3><span>Creative & Innovative</span> <br />Digital <br />Solution</h3>
                                 <p>We are a professional & experienced Digital Agency</p>
                                 <Link to="/service" className="thm-btn banner-one__btn">Discover Now <i className="fa fa-angle-double-right" /></Link>

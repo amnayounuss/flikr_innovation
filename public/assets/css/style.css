@@ -1238,19 +1238,35 @@ h6 {
 	position: relative;
 
 }
-
+.picker{
+	outline: none;
+    width: 100%;
+    border: 2px solid rgba(31, 49, 81, .1);
+    height: 70px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #5f5f5f;
+    display: block;
+    padding-left: 30px;
+    background-color: #fff;
+    border-radius: 0;
+    padding-right: 30px;
+}
+.picker .dropdown-menu>li.selected>a {
+    background: black!important;
+    color: #fff;
+}
 
 
 .banner-one__moc {
 	position: absolute;
-	bottom: -350px;
-	/* margin-top: 300px; */
+	bottom: 300px;
 	right: 50px;
 	-webkit-animation: ImgBounce 5s ease-in-out 0s infinite alternate;
 	animation: ImgBounce 5s ease-in-out 0s infinite alternate;
 	width: 812px;
-	height: 2000px;
-	border-radius: 70% 0% 0% 0%;
+	height: 783px;
+	border-radius: 100%;
 	
 }
 
