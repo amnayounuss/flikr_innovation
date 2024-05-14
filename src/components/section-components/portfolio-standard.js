@@ -75,14 +75,14 @@ class PortFolioStandard extends Component {
     return <section className="portfolio-three portfolio-three__standard-page  go-top">
       <ul className="gallery-filter post-filter has-dynamic-filter-counter portfolio-filter list-unstyled masonary">
         <li className="filter active" data-filter=".masonary-item"><span>View All</span></li>
-        <li className="filter" data-filter=".book"><span> Book</span></li>
+        <li className="filter" data-filter=".logo"><span>Logos</span></li>
         <li className="filter" data-filter=".website"><span>Websites</span></li>
-        <li className="filter" data-filter=".mobile"><span>Mobile Apps</span></li>
+        <li className="filter" data-filter=".mobile"><span>Apps</span></li>
+        <li className="filter" data-filter=".book"><span>E-Book</span></li>
         <li className="filter" data-filter=".printing"><span>Printing</span></li>
         <li className="filter" data-filter=".seo"><span>SEO</span></li>
-        <li className="filter" data-filter=".logo"><span>Logos</span></li>
         <li className="filter" data-filter=".smm"><span>Marketing</span></li>
-        <li className="filter" data-filter=".video"><span>Videos</span></li>
+        <li className="filter" data-filter=".video"><span>Animations</span></li>
 
 
       </ul>

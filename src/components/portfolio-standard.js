@@ -8,7 +8,7 @@ import Footer from './global-components/footer-v2';
 const PortfolioStandard = () => {
     return <div>
         <Navbar />
-        <PageHeader headertitle="Portfolio Standard"  />
+        <PageHeader headertitle="Portfolio"  />
         <Portfolio />
         {/* <Cta /> */}
         <Footer />
