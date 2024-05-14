@@ -8228,6 +8228,7 @@ h6 {
 
 .pricing-one__single {
 	text-align: center;
+	height: 600px;
 	margin-bottom: 30px;
 	background-color: #ffffff;
 	border-radius: 12px;
@@ -8236,9 +8237,23 @@ h6 {
 	overflow: hidden;
 	position: relative;
 }
+
+.pricing-one__list {
+	height: 250px;
+	/* margin-bottom: 5px; */
+	margin-top: 15px;
+}
 .pricing-one__single ul {
 	text-align: left;
 	margin-left: 20px;
+	overflow-y: scroll;
+}
+.pricing-one__single ul::-webkit-scrollbar {
+    display: none;
+}
+.pricing-one__single ul {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 
 
@@ -8347,10 +8362,6 @@ h6 {
 	font-family: var(--special-font-smb);
 }
 
-.pricing-one__list {
-	margin-bottom: 50px;
-	margin-top: 50px;
-}
 
 .pricing-one__list li {
 	line-height: 1em;
