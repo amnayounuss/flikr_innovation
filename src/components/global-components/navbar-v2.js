@@ -35,15 +35,24 @@ class NavbarV2 extends Component {
 										<li><Link to="/service-details">Services Details</Link></li>
 									</ul>
 								</li> */}
-								<li className="dropdown">
+								<li>
+									<Link to="/portfolio-standard">Work</Link>
+									{/* <ul>
+										<li><Link to="/portfolio-standard">Portfolio Standard</Link></li>
+										<li><Link to="/portfolio-full">Portfolio Full</Link></li>
+										<li><Link to="/portfolio-masonary">Portfolio Masonary</Link></li>
+										<li><Link to="/portfolio-details">Portfolio Details</Link></li>
+									</ul> */}
+								</li>
+								{/* <li className="dropdown">
 									<a href="#">Work</a>
 									<ul>
 										<li><Link to="/portfolio-standard">Portfolio Standard</Link></li>
 										<li><Link to="/portfolio-full">Portfolio Full</Link></li>
 										<li><Link to="/portfolio-masonary">Portfolio Masonary</Link></li>
 										<li><Link to="/portfolio-details">Portfolio Details</Link></li>
-									</ul>{/* /.sub-menu */}
-								</li>
+									</ul>
+								</li> */}
 								<li className="dropdown">
 									<a href="#">Pages</a>
 									<ul>

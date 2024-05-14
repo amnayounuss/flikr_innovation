@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
-class Content extends Component {
+class Influencer extends Component {
     render() {
         let publicUrl = process.env.PUBLIC_URL + '/';
         let imagealt = 'image';
@@ -15,4 +15,4 @@ class Content extends Component {
     }
 }
 
-export default Content;
+export default Influencer;

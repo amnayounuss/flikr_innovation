@@ -1258,6 +1258,8 @@ h6 {
 }
 
 
+
+
 .banner-one__moc {
 	position: absolute;
 	bottom: 300px;
@@ -8245,7 +8247,7 @@ h6 {
 
 .pricing-one__single {
 	text-align: center;
-	height: 600px;
+	height: 700px;
 	margin-bottom: 30px;
 	background-color: #ffffff;
 	border-radius: 12px;
@@ -8254,9 +8256,17 @@ h6 {
 	overflow: hidden;
 	position: relative;
 }
+.col-lg-4:hover .pricing-one__single {
+	background: linear-gradient(135deg, #000000, #333333);
+	
+  }
+  
+  .col-lg-4:hover .pricing-one__single .pricing-one__inner {
+	background: linear-gradient(135deg, #000000, #333333);
+  }
 
 .pricing-one__list {
-	height: 250px;
+	height: 300px;
 	/* margin-bottom: 5px; */
 	margin-top: 15px;
 }
@@ -8324,6 +8334,7 @@ h6 {
 	margin: 0;
 }
 
+
 .pricing-one__btn-block ul li a {
 	/* display: block; */
 	width: 100%;
@@ -8386,6 +8397,7 @@ h6 {
 	line-height: 1em;
 	font-size: 16px;
 	color: #5f5f5f;
+
 }
 
 .pricing-one__list li+li {
@@ -8671,6 +8683,7 @@ h6 {
 	position: relative;
 	z-index: 11;
 }
+
 
 .pricing-three__single {
 	border: 2px solid rgba(var(--thm-primary-rgb), .1);
