@@ -8,6 +8,15 @@
         margin-bottom: 50px;
     }
 }
+
+/* Navbar.css */
+@media (max-width: 768px) {
+  .hide-on-small {
+    display: none;
+  }
+}
+
+
 @media(max-width: 1370px) {
     .main-nav__right .main-nav__phone {
         margin-right: 35px;

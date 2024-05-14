@@ -30,6 +30,7 @@ class Animation extends Component {
                                    
                                 </ul>
                                 <a href="#" className="thm-btn pricing-one__btn">Let's Chat<i className="fa fa-angle-double-right" /></a>{/* /.thm-btn pricing-one__btn */}
+                               
                             </div>
                         </div>
                     </div>
@@ -57,18 +58,7 @@ class Animation extends Component {
                                     <li><i className="far fa-check" />Full HD Video Format</li>
                                     <li><i className="far fa-check" />Dedicated Account Manager</li>
                                 </ul>
-                                <div>
-                                    <div className="row">
-                                        <div className="col-md-6">
-                                            {/* First button */}
-                                            <a href="#" className="thm-btn pricing-one__btn">Let's Chat <i className="fa fa-angle-double-right" /></a>
-                                        </div>
-                                        <div className="col-md-6">
-                                            {/* Second button */}
-                                            <a href="#" className="thm-btn pricing-one__btn">Another Action <i className="fa fa-angle-double-right" /></a>
-                                        </div>
-                                    </div>
-                                </div>
+                                <a href="#" className="thm-btn pricing-one__btn">Let's Chat<i className="fa fa-angle-double-right" /></a>{/* /.thm-btn pricing-one__btn */}
 
                             </div>
                         </div>
@@ -95,7 +85,8 @@ class Animation extends Component {
                                     <li><i className="far fa-check" />Full HD Video Format</li>
                                     <li><i className="far fa-check" />Dedicated Account Manager</li>
                                 </ul>
-                                <a href="#" className="thm-btn pricing-one__btn">Let's Chat <i className="fa fa-angle-double-right" /></a>{/* /.thm-btn pricing-one__btn */}
+                                <a href="#" className="thm-btn pricing-one__btn">Let's Chat<i className="fa fa-angle-double-right" /></a>{/* /.thm-btn pricing-one__btn */}
+                               
                             </div>
                         </div>
                     </div>
