@@ -15,7 +15,7 @@ class Navbar extends Component {
 								<img src={publicUrl + "assets/images/logo-2-1.png"} alt={imgattr} style={{ width: '250px', height: '65px' }} />
 							</Link>
 							<a href="#" className="side-menu__toggler"><i className="fa fa-bars" /></a>
-						</div>{/* /.main-nav__logo-box */}
+						</div>
 						<div className="main-nav__main-navigation">
 							<ul className="main-nav__navigation-box">
 								<li>
@@ -36,17 +36,16 @@ class Navbar extends Component {
 										<li><Link to="/pricing">Pricing</Link></li>
 										<li><Link to="/free-quote">Free Quote</Link></li>
 										<li><Link to="/testimonial">Testimonials</Link></li>
-									</ul>{/* /.sub-menu */}
+									</ul>
 								</li>
 								<li>
 									<Link to="/contact">Contact</Link>
 								</li>
 							</ul>
-						</div>{/* /.main-nav__main-navigation */}
+						</div>
 						<div className="main-nav__right">
 							<Link to="/free-quote" className="thm-btn hide-on-small">Get Free Quote<i className="fa fa-angle-right" /></Link>
-							{/* /.thm-btn */}
-						</div>{/* /.main-nav__right */}
+						</div>
 					</div>
 				</nav>
 			</header>

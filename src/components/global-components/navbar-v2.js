@@ -27,49 +27,26 @@ class NavbarV2 extends Component {
 								<li>
 									<Link to="/service">Services </Link>
 								</li>
-								{/* <li className="dropdown">
-									<a href="#">Services</a>
-									<ul>
-										<li><Link to="/service">Services 01</Link></li>
-										<li><Link to="/service-v2">Services 02</Link></li>
-										<li><Link to="/service-details">Services Details</Link></li>
-									</ul>
-								</li> */}
+								
 								<li>
 									<Link to="/portfolio-standard">Work</Link>
-									{/* <ul>
-										<li><Link to="/portfolio-standard">Portfolio Standard</Link></li>
-										<li><Link to="/portfolio-full">Portfolio Full</Link></li>
-										<li><Link to="/portfolio-masonary">Portfolio Masonary</Link></li>
-										<li><Link to="/portfolio-details">Portfolio Details</Link></li>
-									</ul> */}
+									
 								</li>
-								{/* <li className="dropdown">
-									<a href="#">Work</a>
-									<ul>
-										<li><Link to="/portfolio-standard">Portfolio Standard</Link></li>
-										<li><Link to="/portfolio-full">Portfolio Full</Link></li>
-										<li><Link to="/portfolio-masonary">Portfolio Masonary</Link></li>
-										<li><Link to="/portfolio-details">Portfolio Details</Link></li>
-									</ul>
-								</li> */}
+								
 								<li className="dropdown">
 									<a href="#">Pages</a>
 									<ul>
 										<li><Link to="/pricing">Pricing</Link></li>
 										<li><Link to="/free-quote">Free Quote</Link></li>
 										<li><Link to="/testimonial">Testimonials</Link></li>
-										{/* <li><Link to="/team">Team</Link></li> */}
-									</ul>{/* /.sub-menu */}
+									</ul>
 								</li>
-								{/* <li>
-			            <Link to="/blog-grid">News</Link>
-			          </li> */}
+								
 								<li>
 									<Link to="/contact">Contact</Link>
 								</li>
 							</ul>
-						</div>{/* /.main-nav__main-navigation */}
+						</div>
 						<div className="main-nav__right">
 							<a href="#" className="side-menu__toggler"><span /></a>
 						</div>{/* /.main-nav__right */}
