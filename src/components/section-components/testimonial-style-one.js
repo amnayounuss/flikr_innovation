@@ -8,14 +8,14 @@ class TestimonialOne extends Component {
 
 	    const $ = window.$;
 	    
-	        if($('.js-tilt').length) {
-		        $('.js-tilt').tilt({
-		            maxTilt: 20,
-		            perspective:700, 
-		            glare: true,
-		            maxGlare: .3
-		        })
-		    }
+	        // if($('.js-tilt').length) {
+		    //     $('.js-tilt').tilt({
+		    //         maxTilt: 20,
+		    //         perspective:700, 
+		    //         glare: true,
+		    //         maxGlare: .3
+		    //     })
+		    // }
 
 		    if ($('.thm__owl-carousel').length) {
             $('.thm__owl-carousel').each(function () {
