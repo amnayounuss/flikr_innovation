@@ -1,7 +1,7 @@
 {
   "name": "flikr_innovation",
   "version": "0.1.0",
-  "homepage": "http://localhost:3000/flikr_innovation",
+  "homepage": "https://flikrinnovation.com/",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^4.3.3",
