@@ -1,8 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
-import parse from 'html-react-parser';
 import emailjs from 'emailjs-com';
-
 
 class FreeQuoteV1 extends Component {
     constructor(props) {
@@ -12,7 +9,9 @@ class FreeQuoteV1 extends Component {
             email: '',
             service: '',
             phone: '',
-            message: ''
+            message: '',
+            popUpMessage: '', // New state for pop-up message
+            popUpVisible: false // New state for pop-up visibility
         };
         this.formRef = React.createRef();
     }
@@ -25,7 +24,7 @@ class FreeQuoteV1 extends Component {
         e.preventDefault();
 
         emailjs
-            .sendForm('service_f2pd4c1', 'template_zzchn6m', this.formRef.current, 'vC6T0jDA8CeeqTtU8')
+            .sendForm('service_f2pd4c1', 'template_zzchn6m', this.formRef.current, 'DvbxUaRDB9psE-mBX')
             .then(
                 (result) => {
                     console.log('SUCCESS!', result.text);
@@ -35,19 +34,33 @@ class FreeQuoteV1 extends Component {
                         email: '',
                         service: '',
                         phone: '',
-                        message: ''
+                        message: '',
+                        popUpMessage: 'Form submitted successfully!', // Set success message
+                        popUpVisible: true // Show pop-up
                     });
+
+                    // Hide the pop-up after 3 seconds
+                    setTimeout(() => {
+                        this.setState({ popUpVisible: false });
+                    }, 3000);
                 },
                 (error) => {
                     console.log('FAILED...', error.text);
+                    this.setState({
+                        popUpMessage: 'Failed to submit the form. Please try again.', // Set error message
+                        popUpVisible: true // Show pop-up
+                    });
+
+                    // Hide the pop-up after 3 seconds
+                    setTimeout(() => {
+                        this.setState({ popUpVisible: false });
+                    }, 3000);
                 }
             );
     };
 
     render() {
-
-        let publicUrl = process.env.PUBLIC_URL + '/';
-        let imagealt = 'image';
+        const { popUpMessage, popUpVisible } = this.state;
 
         return (
             <section className="faq-one faq-one__faq-page" style={{ backgroundColor: 'transparent' }}>
@@ -62,19 +75,42 @@ class FreeQuoteV1 extends Component {
                                         <div className="col-lg-12">
                                             <div className="contact-one__input-group">
                                                 <i className="contact-one__input-icon far fa-user" />
-                                                <input type="text" placeholder="Your Full Name" name='name' value={this.state.name} onChange={this.handleInputChange} style={{ backgroundColor: 'transparent' }} />
+                                                <input
+                                                    type="text"
+                                                    placeholder="Your Full Name"
+                                                    name='name'
+                                                    value={this.state.name}
+                                                    onChange={this.handleInputChange}
+                                                    style={{ backgroundColor: 'transparent' }}
+                                                    required
+                                                />
                                             </div>
                                         </div>
                                         <div className="col-lg-12">
                                             <div className="contact-one__input-group">
                                                 <i className="contact-one__input-icon far fa-envelope" />
-                                                <input type="text" placeholder="Your Email " name='email' value={this.state.email} onChange={this.handleInputChange} style={{ backgroundColor: 'transparent' }} />
+                                                <input
+                                                    type="email"
+                                                    placeholder="Your Email "
+                                                    name='email'
+                                                    value={this.state.email}
+                                                    onChange={this.handleInputChange}
+                                                    style={{ backgroundColor: 'transparent' }}
+                                                    required
+                                                />
                                             </div>
                                         </div>
                                         <div className="col-lg-12">
                                             <div className="contact-one__input-group">
-                                                <select className='picker' name='service' value={this.state.service} onChange={this.handleInputChange} style={{ backgroundColor: 'transparent' }}>
-                                                    <option value="" selected disabled>Select a Service</option>
+                                                <select
+                                                    className='picker'
+                                                    name='service'
+                                                    value={this.state.service}
+                                                    onChange={this.handleInputChange}
+                                                    style={{ backgroundColor: 'transparent' }}
+                                                    required
+                                                >
+                                                    <option value="" disabled>Select a Service</option>
                                                     <option value="website-development">Website Development</option>
                                                     <option value="logo-design">Logo Design</option>
                                                     <option value="ebook">E-Book</option>
@@ -87,13 +123,28 @@ class FreeQuoteV1 extends Component {
                                         <div className="col-lg-12">
                                             <div className="contact-one__input-group">
                                                 <i className="contact-one__input-icon far fa-phone" />
-                                                <input type="text" placeholder="Your Phone" name='phone' value={this.state.phone} onChange={this.handleInputChange} style={{ backgroundColor: 'transparent' }} />
+                                                <input
+                                                    type="text"
+                                                    placeholder="Your Phone"
+                                                    name='phone'
+                                                    value={this.state.phone}
+                                                    onChange={this.handleInputChange}
+                                                    style={{ backgroundColor: 'transparent' }}
+                                                    required
+                                                />
                                             </div>
                                         </div>
                                         <div className="col-lg-12">
                                             <div className="contact-one__input-group">
                                                 <i className="contact-one__input-icon far fa-pencil-alt" />
-                                                <textarea placeholder="Write Message" defaultValue={""} name='message' value={this.state.message} onChange={this.handleInputChange} style={{ backgroundColor: 'transparent' }} />
+                                                <textarea
+                                                    placeholder="Write Message"
+                                                    name='message'
+                                                    value={this.state.message}
+                                                    onChange={this.handleInputChange}
+                                                    style={{ backgroundColor: 'transparent' }}
+                                                    required
+                                                />
                                             </div>
                                         </div>
                                         <div className="col-lg-12">
@@ -101,6 +152,7 @@ class FreeQuoteV1 extends Component {
                                         </div>
                                     </div>
                                 </form>
+                                {popUpVisible && <div className="pop-up-message">{popUpMessage}</div>}
                             </div>
                         </div>
                     </div>

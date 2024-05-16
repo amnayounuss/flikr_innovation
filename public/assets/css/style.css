@@ -7772,23 +7772,27 @@ h6 {
 }
 
 .side-menu__social .fa-facebook-f {
-	background-image: -webkit-gradient(linear, left top, right top, from(#0349a6), color-stop(51%, #15c27b), to(#0349a6));
-	background-image: linear-gradient(90deg, #0349a6 0%, #15c27b 51%, #0349a6 100%);
+	background-image: -webkit-gradient(linear, left top, right top, from(#000000), color-stop(51%, #FF0000), to(#000000));
+background-image: linear-gradient(90deg, #000000 0%, #FF0000 51%, #000000 100%);
+
 }
 
 .side-menu__social .fa-twitter {
-	background-image: -webkit-gradient(linear, left top, right top, from(#4453ac), color-stop(51%, #03a9db), to(#4453ac));
-	background-image: linear-gradient(90deg, #4453ac 0%, #03a9db 51%, #4453ac 100%);
+	background-image: -webkit-gradient(linear, left top, right top, from(#000000), color-stop(51%, #FF0000), to(#000000));
+background-image: linear-gradient(90deg, #000000 0%, #FF0000 51%, #000000 100%);
+
 }
 
 .side-menu__social .fa-instagram {
-	background-image: -webkit-gradient(linear, left top, right top, from(#4a0e8f), color-stop(51%, #b430a7), to(#4a0e8f));
-	background-image: linear-gradient(90deg, #4a0e8f 0%, #b430a7 51%, #4a0e8f 100%);
+	background-image: -webkit-gradient(linear, left top, right top, from(#000000), color-stop(51%, #FF0000), to(#000000));
+background-image: linear-gradient(90deg, #000000 0%, #FF0000 51%, #000000 100%);
+
 }
 
 .side-menu__social .fa-pinterest-p {
-	background-image: -webkit-gradient(linear, left top, right top, from(#e41256), color-stop(51%, #ffa337), to(#e41256));
-	background-image: linear-gradient(90deg, #e41256 0%, #ffa337 51%, #e41256 100%);
+	background-image: -webkit-gradient(linear, left top, right top, from(#000000), color-stop(51%, #FF0000), to(#000000));
+background-image: linear-gradient(90deg, #000000 0%, #FF0000 51%, #000000 100%);
+
 
 }
 

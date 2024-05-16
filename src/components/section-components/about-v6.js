@@ -28,7 +28,7 @@ class AboutV6 extends Component {
 
     return (
       <section className="about-three about-three__about-page go-top">
-        <div className="container">
+        <div className="container" style={{marginTop: "-50px"}}>
           <div className="row">
             <div className="col-xl-6">
               <div className="about-three__content">
