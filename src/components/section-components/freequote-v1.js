@@ -50,11 +50,11 @@ class FreeQuoteV1 extends Component {
       let imagealt = 'image';
 
       return (
-          <section className="faq-one faq-one__faq-page">
+          <section className="faq-one faq-one__faq-page" style={{backgroundColor: 'white'}}>
               <div className="container">
                   <div className="row">
                   <div className='col-lg-3'></div>
-                      <div className="col-lg-6" style={{border:' 1px solid #D8D8D8', borderRadius: '25px', padding: '0px 50px 50px 50px'}}>
+                      <div className="col-lg-6 formshadow" style={{border:' 1px solid #D8D8D8', borderRadius: '25px', padding: '0px 50px 50px 50px'}}>
                           <div className="faq-one__form-wrap">
                               <form action="#" className="contact-one__form" ref={this.formRef} onSubmit={this.sendEmail}>
                                   <h3>Let’s Create Something Extraordinary Together</h3>
@@ -62,18 +62,18 @@ class FreeQuoteV1 extends Component {
                                       <div className="col-lg-12">
                                           <div className="contact-one__input-group">
                                               <i className="contact-one__input-icon far fa-user" />
-                                              <input type="text" placeholder="Your Full Name" name='name' value={this.state.name} onChange={this.handleInputChange} />
+                                              <input type="text" placeholder="Your Full Name" name='name' value={this.state.name} onChange={this.handleInputChange} style={{ backgroundColor: 'transparent' } }/>
                                           </div>
                                       </div>
                                       <div className="col-lg-12">
                                           <div className="contact-one__input-group">
                                               <i className="contact-one__input-icon far fa-envelope" />
-                                              <input type="text" placeholder="Your Email " name='email' value={this.state.email} onChange={this.handleInputChange} />
+                                              <input type="text" placeholder="Your Email " name='email' value={this.state.email} onChange={this.handleInputChange} style={{ backgroundColor: 'transparent' }} />
                                           </div>
                                       </div>
                                       <div className="col-lg-12">
                                           <div className="contact-one__input-group">
-                                              <select className='picker' name='service' value={this.state.service} onChange={this.handleInputChange}>
+                                              <select className='picker' name='service' value={this.state.service} onChange={this.handleInputChange} style={{ backgroundColor: 'transparent' }}>
                                                   <option value="" selected disabled>Select a Service</option>
                                                   <option value="website-development">Website Development</option>
                                                   <option value="logo-design">Logo Design</option>
@@ -87,13 +87,13 @@ class FreeQuoteV1 extends Component {
                                       <div className="col-lg-12">
                                           <div className="contact-one__input-group">
                                               <i className="contact-one__input-icon far fa-phone" />
-                                              <input type="text" placeholder="Your Phone" name='phone' value={this.state.name} onChange={this.handleInputChange} />
+                                              <input type="text" placeholder="Your Phone" name='phone' value={this.state.name} onChange={this.handleInputChange} style={{ backgroundColor: 'transparent' }} />
                                           </div>
                                       </div>
                                       <div className="col-lg-12">
                                           <div className="contact-one__input-group">
                                               <i className="contact-one__input-icon far fa-pencil-alt" />
-                                              <textarea placeholder="Write Message" defaultValue={""} name='message' value={this.state.name} onChange={this.handleInputChange} />
+                                              <textarea placeholder="Write Message" defaultValue={""} name='message' value={this.state.name} onChange={this.handleInputChange} style={{ backgroundColor: 'transparent' }} />
                                           </div>
                                       </div>
                                       <div className="col-lg-12">
