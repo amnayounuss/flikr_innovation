@@ -28,7 +28,7 @@ class Navbar extends Component {
 									<Link to="/service">Services </Link>
 								</li>
 								<li>
-									<Link to="/portfolio-standard">Work</Link>
+									<Link to="/portfolio-standard">Portfolio</Link>
 								</li>
 								<li className="dropdown">
 									<a href="#">Pages</a>

@@ -26,11 +26,18 @@ class Video extends Component {
                                     Your browser does not support the video tag.
                                 </video>
                             </div>
-                            <div className="portfolio-three__content">
+                            <div className="portfolio-three__content" style={{ marginLeft: '20px' }}>
                                 <div className="portfolio-three__content-inner">
-                                    <Link to="/pricing" className="portfolio-three__link"><i className="fa fa-long-arrow-alt-right" /></Link>
-                                    <h3><Link to="/pricing">Video Thumbnail</Link></h3>
-                                    <p><Link to="/pricing">Animate.</Link><Link to="/portfolio-details">Video</Link></p>
+                                    <Link to={{ pathname: "/pricing", state: { activeTab: 'animation' } }} className="portfolio-three__link">
+                                        <i className="fa fa-long-arrow-alt-right" />
+                                    </Link>
+                                    <h3>
+                                        <Link to={{ pathname: "/pricing", state: { activeTab: 'animation' } }}>Video Thumbnail</Link>
+                                    </h3>
+                                    <p>
+                                        <Link to={{ pathname: "/pricing", state: { activeTab: 'animation' } }}>Animate.</Link>
+                                        <Link to="/portfolio-details">Video</Link>
+                                    </p>
                                 </div>
                             </div>
                         </div>

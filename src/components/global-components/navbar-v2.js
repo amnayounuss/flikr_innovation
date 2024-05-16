@@ -29,7 +29,7 @@ class NavbarV2 extends Component {
 								</li>
 								
 								<li>
-									<Link to="/portfolio-standard">Work</Link>
+									<Link to="/portfolio-standard">Portfolio</Link>
 									
 								</li>
 								

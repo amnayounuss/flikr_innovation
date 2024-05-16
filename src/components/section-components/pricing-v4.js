@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { withRouter } from 'react-router-dom';
 import Logo from '../pricing/logo';
 import Website from '../pricing/website';
 import SocialMedia from '../pricing/socialmedia';
@@ -11,7 +12,23 @@ import Animation from '../pricing/animation';
 import Influencer from '../pricing/influencermarketing';
 
 class PricingV4 extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      activeTab: 'logo'
+    };
+  }
+
+  componentDidMount() {
+    const { state } = this.props.location;
+    if (state && state.activeTab) {
+      this.setState({ activeTab: state.activeTab });
+    }
+  }
+
   render() {
+    const { activeTab } = this.state;
+
     return (
       <section className="pricing-one pricing-one__pricing-page">
         <div className="container">
@@ -25,76 +42,69 @@ class PricingV4 extends Component {
           <div className="pricing-one__btn-block">
             <ul className="list-unstyled nav nav-tabs">
               <li className="nav-item">
-                <a href="#logo" className="nav-link active" data-toggle="tab">Logo</a>
+                <a href="#logo" className={`nav-link ${activeTab === 'logo' ? 'active' : ''}`} data-toggle="tab">Logo</a>
               </li>
               <li className="nav-item">
-                <a href="#website" className="nav-link" data-toggle="tab">Websites</a>
+                <a href="#website" className={`nav-link ${activeTab === 'website' ? 'active' : ''}`} data-toggle="tab">Websites</a>
               </li>
               <li className="nav-item">
-                <a href="#mobile" className="nav-link " data-toggle="tab">Apps</a>
+                <a href="#mobile" className={`nav-link ${activeTab === 'mobile' ? 'active' : ''}`} data-toggle="tab">Apps</a>
               </li>
               <li className="nav-item">
-                <a href="#ebook" className="nav-link " data-toggle="tab">E-Book</a>
+                <a href="#ebook" className={`nav-link ${activeTab === 'ebook' ? 'active' : ''}`} data-toggle="tab">E-Book</a>
               </li>
               <li className="nav-item">
-                <a href="#printing" className="nav-link " data-toggle="tab">Printing</a>
+                <a href="#printing" className={`nav-link ${activeTab === 'printing' ? 'active' : ''}`} data-toggle="tab">Printing</a>
               </li>
               <li className="nav-item">
-                <a href="#socialmedia" className="nav-link " data-toggle="tab">SMM</a>
+                <a href="#socialmedia" className={`nav-link ${activeTab === 'socialmedia' ? 'active' : ''}`} data-toggle="tab">SMM</a>
               </li>
               <li className="nav-item">
-                <a href="#animation" className="nav-link " data-toggle="tab">Animation</a>
+                <a href="#animation" className={`nav-link ${activeTab === 'animation' ? 'active' : ''}`} data-toggle="tab">Animation</a>
               </li>
               <li className="nav-item">
-                <a href="#seo" className="nav-link " data-toggle="tab">SEO</a>
+                <a href="#seo" className={`nav-link ${activeTab === 'seo' ? 'active' : ''}`} data-toggle="tab">SEO</a>
               </li>
               <li className="nav-item">
-                <a href="#ppc" className="nav-link " data-toggle="tab">PPC</a>
+                <a href="#influencer" className={`nav-link ${activeTab === 'influencer' ? 'active' : ''}`} data-toggle="tab">Marketing</a>
               </li>
               <li className="nav-item">
-                <a href="#influencer" className="nav-link " data-toggle="tab">Marketing</a>
+                <a href="#content" className={`nav-link ${activeTab === 'content' ? 'active' : ''}`} data-toggle="tab">Writing</a>
               </li>
-              
-              <li className="nav-item">
-                <a href="#content" className="nav-link " data-toggle="tab">Writing</a>
-              </li>
-              
-              
             </ul>
           </div>
 
           <div className="tab-content" style={{ marginTop: '50px' }}>
-            <div className="tab-pane show active" id="logo">
+            <div className={`tab-pane ${activeTab === 'logo' ? 'show active' : ''}`} id="logo">
               <Logo />
             </div>
-            <div className="tab-pane" id="website">
+            <div className={`tab-pane ${activeTab === 'website' ? 'show active' : ''}`} id="website">
               <Website />
             </div>
-            <div className="tab-pane" id="mobile">
-              <MobileApp/>
+            <div className={`tab-pane ${activeTab === 'mobile' ? 'show active' : ''}`} id="mobile">
+              <MobileApp />
             </div>
-            <div className="tab-pane" id="ebook">
-              <Book/>
+            <div className={`tab-pane ${activeTab === 'ebook' ? 'show active' : ''}`} id="ebook">
+              <Book />
             </div>
-            <div className="tab-pane" id="printing">
-              <Printing/>
+            <div className={`tab-pane ${activeTab === 'printing' ? 'show active' : ''}`} id="printing">
+              <Printing />
             </div>
-            <div className="tab-pane" id="socialmedia">
-              <SocialMedia/>
+            <div className={`tab-pane ${activeTab === 'socialmedia' ? 'show active' : ''}`} id="socialmedia">
+              <SocialMedia />
             </div>
-            <div className="tab-pane" id="animation">
-              <Animation/>
+            <div className={`tab-pane ${activeTab === 'animation' ? 'show active' : ''}`} id="animation">
+              <Animation />
             </div>
-            <div className="tab-pane" id="seo">
-              <Seo/>
+            <div className={`tab-pane ${activeTab === 'seo' ? 'show active' : ''}`} id="seo">
+              <Seo />
             </div>
-            <div className="tab-pane" id="influencer">
-              <Influencer/>
+            <div className={`tab-pane ${activeTab === 'influencer' ? 'show active' : ''}`} id="influencer">
+              <Influencer />
             </div>
-            <div className="tab-pane" id="content">
-              <Content/>
+            <div className={`tab-pane ${activeTab === 'content' ? 'show active' : ''}`} id="content">
+              <Content />
             </div>
-          
           </div>
         </div>
       </section>
@@ -102,4 +112,4 @@ class PricingV4 extends Component {
   }
 }
 
-export default PricingV4;
+export default withRouter(PricingV4);

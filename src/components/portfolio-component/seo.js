@@ -6,7 +6,7 @@ class SEO extends Component {
         let publicUrl = process.env.PUBLIC_URL + '/';
         let imagealt = 'image';
 
-        // Define an array of printing data
+        // Define an array of SEO data
         const seos = [
             { id: 1, image: "seo1.png" },
             { id: 2, image: "seo2.png" },
@@ -19,7 +19,7 @@ class SEO extends Component {
 
         return (
             <React.Fragment>
-                {/* Map over the printing data and render each item dynamically */}
+                {/* Map over the SEO data and render each item dynamically */}
                 {seos.map(seo => (
                     <div key={seo.id} className="col-lg-3 col-md-6 col-sm-12 seo masonary-item">
                         <div className="portfolio-three__single">
@@ -28,9 +28,16 @@ class SEO extends Component {
                             </div>
                             <div className="portfolio-three__content">
                                 <div className="portfolio-three__content-inner">
-                                    <Link to="/pricing" className="portfolio-three__link"><i className="fa fa-long-arrow-alt-right" /></Link>
-                                    <h3><Link to="/pricing">Printing Work</Link></h3>
-                                    <p><Link to="/pricing">Perform.</Link><Link to="/portfolio-details">SEO</Link></p>
+                                    <Link to={{ pathname: "/pricing", state: { activeTab: 'seo' } }} className="portfolio-three__link">
+                                        <i className="fa fa-long-arrow-alt-right" />
+                                    </Link>
+                                    <h3>
+                                        <Link to={{ pathname: "/pricing", state: { activeTab: 'seo' } }}>SEO Work</Link>
+                                    </h3>
+                                    <p>
+                                        <Link to={{ pathname: "/pricing", state: { activeTab: 'seo' } }}>Perform.</Link>
+                                        <Link to="/portfolio-details">SEO</Link>
+                                    </p>
                                 </div>
                             </div>
                         </div>

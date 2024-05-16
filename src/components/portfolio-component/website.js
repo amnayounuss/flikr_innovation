@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import parse from 'html-react-parser';
 
 class Website extends Component {
     render() {
@@ -32,9 +31,16 @@ class Website extends Component {
                             </div>
                             <div className="portfolio-three__content">
                                 <div className="portfolio-three__content-inner">
-                                    <Link to="/pricing" className="portfolio-three__link"><i className="fa fa-long-arrow-alt-right" /></Link>
-                                    <h3><Link to="/pricing">Creative Work</Link></h3>
-                                    <p><Link to="/pricing">Develop.</Link><Link to="/portfolio-details">Website</Link></p>
+                                    <Link to={{ pathname: "/pricing", state: { activeTab: 'website' } }} className="portfolio-three__link">
+                                        <i className="fa fa-long-arrow-alt-right" />
+                                    </Link>
+                                    <h3>
+                                        <Link to={{ pathname: "/pricing", state: { activeTab: 'website' } }}>Creative Work</Link>
+                                    </h3>
+                                    <p>
+                                        <Link to={{ pathname: "/pricing", state: { activeTab: 'website' } }}>Develop.</Link>
+                                        <Link to="/portfolio-details">Website</Link>
+                                    </p>
                                 </div>
                             </div>
                         </div>

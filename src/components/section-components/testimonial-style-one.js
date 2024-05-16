@@ -77,7 +77,7 @@ class TestimonialOne extends Component {
 						attention to detail, and unwavering dedication to customer satisfaction distinguish 
 						them from the rest. We are delighted with the outcomes and eagerly anticipate 
 						collaborating with them on future ventures.</p>
-			            <h3>Katrina Taylo</h3>
+			            <h3>Katrina Taylor</h3>
 			            <span>CTO of Flikr Innovation</span>
 			            <i className="fa fa-quote-right testimonials-one__qoute-icon" />
 			          </div>
@@ -129,7 +129,7 @@ class TestimonialOne extends Component {
 						attention to detail, and unwavering dedication to customer satisfaction distinguish 
 						them from the rest. We are delighted with the outcomes and eagerly anticipate 
 						collaborating with them on future ventures.</p>
-			            <h3>Katrina Taylo</h3>
+			            <h3>Katrina Taylor</h3>
 			            <span>CTO of Flikr Innovation</span>
 			            <i className="fa fa-quote-right testimonials-one__qoute-icon" />
 			          </div>

@@ -31,9 +31,16 @@ class Logo extends Component {
                             </div>
                             <div className="portfolio-three__content">
                                 <div className="portfolio-three__content-inner">
-                                    <Link to="/pricing" className="portfolio-three__link"><i className="fa fa-long-arrow-alt-right" /></Link>
-                                    <h3><Link to="/pricing">Logo Design</Link></h3>
-                                    <p><Link to="/pricing">Design.</Link><Link to="/portfolio-details">Logo</Link></p>
+                                    <Link to={{ pathname: "/pricing", state: { activeTab: 'logo' } }} className="portfolio-three__link">
+                                        <i className="fa fa-long-arrow-alt-right" />
+                                    </Link>
+                                    <h3>
+                                        <Link to={{ pathname: "/pricing", state: { activeTab: 'logo' } }}>Logo Design</Link>
+                                    </h3>
+                                    <p>
+                                        <Link to={{ pathname: "/pricing", state: { activeTab: 'logo' } }}>Design.</Link>
+                                        <Link to="/portfolio-details">Logo</Link>
+                                    </p>
                                 </div>
                             </div>
                         </div>

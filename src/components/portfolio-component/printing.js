@@ -31,9 +31,16 @@ class Printing extends Component {
                             </div>
                             <div className="portfolio-three__content">
                                 <div className="portfolio-three__content-inner">
-                                    <Link to="/pricing" className="portfolio-three__link"><i className="fa fa-long-arrow-alt-right" /></Link>
-                                    <h3><Link to="/pricing">Printing Work</Link></h3>
-                                    <p><Link to="/pricing">Design.</Link><Link to="/portfolio-details">Branding</Link></p>
+                                    <Link to={{ pathname: "/pricing", state: { activeTab: 'printing' } }} className="portfolio-three__link">
+                                        <i className="fa fa-long-arrow-alt-right" />
+                                    </Link>
+                                    <h3>
+                                        <Link to={{ pathname: "/pricing", state: { activeTab: 'printing' } }}>Printing Work</Link>
+                                    </h3>
+                                    <p>
+                                        <Link to={{ pathname: "/pricing", state: { activeTab: 'printing' } }}>Design.</Link>
+                                        <Link to="/portfolio-details">Branding</Link>
+                                    </p>
                                 </div>
                             </div>
                         </div>
