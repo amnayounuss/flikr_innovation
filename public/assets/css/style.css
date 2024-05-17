@@ -1075,7 +1075,23 @@ h6 {
 	width: 100%;
 	z-index: 91;
 }
-
+.bannergradient{
+	background: linear-gradient(-45deg, #6D747B, #000000, #616B73, #000000);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 800px;
+}
+@keyframes gradient {
+	0% {
+	  background-position: 0% 50%;
+	}
+	50% {
+	  background-position: 100% 50%;
+	}
+	100% {
+	  background-position: 0% 50%;
+	}
+}  
 .site-header-two__home-three .main-nav__two .main-nav__navigation-box>li>a {
 	color: #fff;
 }
@@ -1269,7 +1285,7 @@ h6 {
 
 .banner-one__moc {
 	position: absolute;
-	bottom: 300px;
+	bottom: -90px;
 	right: 50px;
 	-webkit-animation: ImgBounce 5s ease-in-out 0s infinite alternate;
 	animation: ImgBounce 5s ease-in-out 0s infinite alternate;
