@@ -1,13 +1,17 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import parse from 'html-react-parser';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 class ServiceV5 extends Component {
+    componentDidMount() {
+        AOS.init({ duration: 1500, easing: 'ease-in-out', once: true, disable: false });
+    }
 
     render() {
-
-    let publicUrl = process.env.PUBLIC_URL+'/'
-    let imagealt = 'image'
+        let publicUrl = process.env.PUBLIC_URL + '/';
+        let imagealt = 'image';
 
     return	<section className="service-two service-two__service-page  go-top">
 		  <div className="container">
