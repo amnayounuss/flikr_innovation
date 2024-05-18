@@ -66,11 +66,11 @@ class Printing extends Component {
                                     <div className="row">
                                         <div className="col-md-6">
                                             {/* First button */}
-                                            <a href="#" className="thm-btn pricing-one__btn">Let's Chat <i className="fa fa-angle-double-right" /></a>
+                                            <a href="#" className="thm-btn pricing-one__btn chatbtn1">Order Now<i className="fa fa-angle-double-right" /></a>
                                         </div>
                                         <div className="col-md-6">
                                             {/* Second button */}
-                                            <a href="#" className="thm-btn pricing-one__btn">Another Action <i className="fa fa-angle-double-right" /></a>
+                                            <a href="#" className="thm-btn pricing-one__btn chatbtn"> Let's Chat <i className="fa fa-angle-double-right" /></a>
                                         </div>
                                     </div>
                                 </div>

@@ -35,7 +35,32 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
+<style>
+    .cursor-dot{
+        width: 5px;
+        height: 5px;
+        background-color: rgb(255, 0, 0);
+    }
+    .cursor-outline {
+        width: 30px;
+        height: 30px;
+        border: 2px solid hsla(0, 100%, 50%, 0.5);
+    }
+    .cursor-dot,
+    .cursor-outline {
+        position: fixed;
+        top: 0;
+        left: 0;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        z-index: 1;
+        pointer-events: none;
+    }
+</style>
 <body>
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
+
  <div class="preloader" style="background-color: black;">
     <img src="%PUBLIC_URL%/assets/images/loader.png" class="preloader__image" alt=""
      >
@@ -45,7 +70,6 @@
   </div>
   
      <div class="side-menu__block">
-
 
         <div class="side-menu__block-overlay custom-cursor__overlay">
             <div class="cursor"></div>
@@ -107,7 +131,28 @@
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-    
+    <script>
+        const cursorDot = document.querySelector("[data-cursor-dot]");
+        const cursorOutline = document.querySelector("[data-cursor-outline]");
+
+        window.addEventListener
+        ("mousemove", (e) => {
+            const postX = e.clientX;
+            const postY = e.clientY;
+
+            cursorDot.style.left = `${postX}px`;
+            cursorDot.style.top = `${postY}px`;
+
+            // cursorOutline.style.left = `${postX}px`;
+            // cursorOutline.style.top = `${postY}px`;
+            cursorOutline.animate({
+                left: `${postX}px`,
+                top: `${postY}px`
+                }, { duration: 500, fill:"forwards"
+            });
+        });
+    </script>
+
 
 
     <!--Start of Tawk.to Script-->

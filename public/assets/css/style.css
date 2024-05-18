@@ -8340,6 +8340,22 @@ background-image: linear-gradient(90deg, #000000 0%, #FF0000 51%, #000000 100%);
 	background-color: #fff;
 }
 
+.chatbtn{
+	margin-top: 22px;
+    padding: 15px 30px 13px !important;
+	
+ 
+
+}
+.chatbtn1{
+	margin-top: 22px;
+    padding: 15px 30px 13px !important;
+	margin-left: 16px;
+	
+ 
+	
+}
+
 .pricing-one__btn-block ul {
 	margin: 0;
 	width: 100%;
