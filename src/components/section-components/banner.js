@@ -27,7 +27,7 @@ class Banner extends Component {
                                 </h3>
                             </div>
                             <div data-aos="fade-up" data-aos-delay="2000">
-                                <h5 data-aos="fade-left" data-aos-delay="2500">We are a professional & experienced Digital Agency</h5>
+                                <h5 data-aos="fade-left" data-aos-delay="2500" className='bannerslogan'>We are a professional & experienced Digital Agency</h5>
                             </div>
                             <div data-aos="fade-up" data-aos-delay="3000">
                                 <Link to="/service" className="thm-btn banner-one__btn" data-aos="zoom-in" data-aos-delay="3500">

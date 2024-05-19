@@ -14,7 +14,6 @@ class Navbar extends Component {
 							<Link to="/">
 								<img src={publicUrl + "assets/images/logo-2-1.png"} alt={imgattr} style={{ width: '250px', height: '65px' }} />
 							</Link>
-							<a href="#" className="side-menu__toggler"><i className="fa fa-bars" /></a>
 						</div>
 						<div className="main-nav__main-navigation">
 							<ul className="main-nav__navigation-box">
@@ -46,6 +45,8 @@ class Navbar extends Component {
 						<div className="main-nav__right">
 							<Link to="/free-quote" className="thm-btn hide-on-small">Get Free Quote<i className="fa fa-angle-right" /></Link>
 						</div>
+						<a href="#" className="side-menu__toggler"><i className="fa fa-bars" /></a>
+
 					</div>
 				</nav>
 			</header>

@@ -13,8 +13,8 @@ class WhyChooseUs extends Component {
         let imagealt = 'image';
 
         return (
-            <section className="service-one go-top" data-aos="fade-in">
-                <div className="container">
+            <section className="service-one go-top" data-aos="fade-in" >
+                <div className="container" style={{marginTop: '80px'}}>
                     <div className="block-title text-center" data-aos="fade-up">
                         <p><span>Why Choose Us</span></p>
                         <h3 data-aos="zoom-in">Success Your Business With <br /> Establish Agency</h3>
