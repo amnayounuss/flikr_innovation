@@ -1,112 +1,113 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 
 class Website extends Component {
     render() {
-        let publicUrl = process.env.PUBLIC_URL + '/';
-        let imagealt = 'image';
+        const publicUrl = process.env.PUBLIC_URL + '/';
+        const imagealt = 'image';
 
+        const plans = [
+            {
+                name: "Startup",
+                price: 399,
+                features: [
+                    "3 Page Website ",
+                    "Custom Layout Design",
+                    "Contact / Query Form",
+                    "1 Banner Design",
+                    "2 Stock Photos",
+                    "FREE Favicon Design",
+                    "Cross Browser Compatible",
+                    "Complete W3C Certified HTML",
+                    "Website Initial Concepts in 48 Hours",
+                    "Complete Design & Deployment",
+                    "Complete Source Files",
+                    "API Integrations",
+                    "Dedicated Project Manager",
+                    "100% Ownership Rights",
+                    "100% Satisfaction Guarantee",
+                    "Value Added Services",
+                    "Mobile Responsive",
+                    "CMS"
+                ],
+                image: "pricing-i-1-1.png"
+            },
+            {
+                name: "Regular",
+                price: 499,
+                features: [
+                    "5 Page Website",
+                    "Custom Layout Design",
+                    "Contact / Query Form",
+                    "3 Banner Design",
+                    "5 Stock Photos",
+                    "FREE Favicon Design",
+                    "Cross Browser Compatible",
+                    "Complete W3C Certified HTML",
+                    "Website Initial Concepts in 48 Hours",
+                    "Complete Design & Deployment",
+                    "Dedicated Project Manager",
+                    "100% Ownership Rights",
+                    "100% Satisfaction Guarantee",
+                    "Value Added Services",
+                    "Mobile Responsive",
+                    "CMS"
+                ],
+                image: "pricing-i-1-2.png"
+            },
+            {
+                name: "Premium",
+                price: 899,
+                features: [
+                    "Up to 10 Unique Pages Website",
+                    "CMS / Admin Panel Integration",
+                    "5+ Stock Photos & Banner Designs",
+                    "FREE Social Media Integration",
+                    "FREE Favicon Design",
+                    "Unlimited Revisions",
+                    "Cross Browser Compatible",
+                    "Complete W3C Certified HTML",
+                    "Website Initial Concepts in 48 Hours",
+                    "Complete Design & Deployment",
+                    "Custom, Interactive & Dynamic Web Design",
+                    "Industry specified Team of Expert",
+                    "Complete Design & Deployment",
+                    "Complete Source Files",
+                    "Dedicated Project Manager",
+                    "100% Ownership Rights",
+                    "100% Satisfaction Guarantee",
+                    "Value Added Services",
+                    "Mobile Responsive",
+                    "CMS"
+                ],
+                image: "pricing-i-1-3.png"
+            }
+        ];
 
         return (
-            <div className="tab-pane show active  animated fadeInUp" id="website">
+            <div className="tab-pane show active animated fadeInUp" id="website">
                 <div className="row">
-                    <div className="col-lg-4">
-                        <div className="pricing-one__single">
-                            <div className="pricing-one__inner">
-                                <img src={publicUrl + "assets/images/shapes/pricing-i-1-1.png"} alt={imagealt} />
-                                <div className="pricing-one__top">
-                                    <h3>Startup</h3>
-                                    <p><span>$</span>399</p>
+                    {plans.map((plan, index) => (
+                        <div className="col-lg-4" key={index}>
+                            <div className="pricing-one__single">
+                                <div className="pricing-one__inner">
+                                    <img src={`${publicUrl}assets/images/shapes/${plan.image}`} alt={imagealt} />
+                                    <div className="pricing-one__top">
+                                        <h3>{plan.name}</h3>
+                                        <p><span>$</span>{plan.price}</p>
+                                    </div>
+                                    <ul className="pricing-one__list list-unstyled">
+                                        {plan.features.map((feature, idx) => (
+                                            <li key={idx} style={{ display: 'flex', alignItems: 'center' }}>
+                                                <div><i className="far fa-check" /></div>
+                                                <div>{feature}</div>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                    <a href="#" className="thm-btn pricing-one__btn">Let's Chat <i className="fa fa-angle-double-right" /></a>
                                 </div>
-                                <ul className="pricing-one__list list-unstyled">
-                                    <li><i className="far fa-check" />3 Page Website</li>
-                                    <li><i className="far fa-check" />Custom Layout Design</li>
-                                    <li><i className="far fa-check" />Contact / Query Form</li>
-                                    <li><i className="far fa-check" />1 Banner Design</li>
-                                    <li><i className="far fa-check" />2 Stock Photos</li>
-                                    <li><i className="far fa-check" />FREE Favicon Design</li>
-                                    <li><i className="far fa-check" />Cross Browser Compatible</li>
-                                    <li><i className="far fa-check" />Complete W3C Certified HTML</li>
-                                    <li><i className="far fa-check" />Website Initial Concepts in 48 Hours</li>
-                                    <li><i className="far fa-check" />Complete Design & Deployment</li>
-                                    <li><i className="far fa-check" />Complete Source Files</li>
-                                    <li><i className="far fa-check" />API Integrations</li>
-                                    <li><i className="far fa-check" />Dedicated Project Manager</li>
-                                    <li><i className="far fa-check" />100% Ownership Rights</li>
-                                    <li><i className="far fa-check" />100% Satisfaction Guarantee</li>
-                                    <li><i className="far fa-check" />Value Added Services</li>
-                                    <li><i className="far fa-check" />Mobile Responsive</li>
-                                    <li><i className="far fa-check" />CMS</li>
-                                </ul>
-                                <a href="#" className="thm-btn pricing-one__btn">Let's Chat<i className="fa fa-angle-double-right" /></a>{/* /.thm-btn pricing-one__btn */}
                             </div>
                         </div>
-                    </div>
-                    <div className="col-lg-4">
-                        <div className="pricing-one__single">
-                            <div className="pricing-one__inner">
-
-                                <img src={publicUrl + "assets/images/shapes/pricing-i-1-2.png"} alt={imagealt} />
-                                <div className="pricing-one__top">
-                                    <h3>Regular</h3>
-                                    <p><span>$</span>499</p>
-                                </div>
-                                <ul className="pricing-one__list list-unstyled">
-                                    <li><i className="far fa-check" />5 Page Website</li>
-                                    <li><i className="far fa-check" />Custom Layout Design</li>
-                                    <li><i className="far fa-check" />Contact / Query Form</li>
-                                    <li><i className="far fa-check" />3 Banner Design</li>
-                                    <li><i className="far fa-check" />5 Stock Photos</li>
-                                    <li><i className="far fa-check" />FREE Favicon Design</li>
-                                    <li><i className="far fa-check" />Cross Browser Compatible</li>
-                                    <li><i className="far fa-check" />Complete W3C Certified HTML</li>
-                                    <li><i className="far fa-check" />Website Initial Concepts in 48 Hours</li>
-                                    <li><i className="far fa-check" />Complete Design & Deployment</li>
-                                    <li><i className="far fa-check" />Dedicated Project Manager</li>
-                                    <li><i className="far fa-check" />100% Ownership Rights</li>
-                                    <li><i className="far fa-check" />100% Satisfaction Guarantee</li>
-                                    <li><i className="far fa-check" />Value Added Services</li>
-                                    <li><i className="far fa-check" />Mobile Responsive</li>
-                                    <li><i className="far fa-check" />CMS</li>
-                                </ul>
-                                <a href="#" className="thm-btn pricing-one__btn">Let's Chat <i className="fa fa-angle-double-right" /></a>{/* /.thm-btn pricing-one__btn */}
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-lg-4">
-                        <div className="pricing-one__single">
-                            <div className="pricing-one__inner">
-                                <img src={publicUrl + "assets/images/shapes/pricing-i-1-3.png"} alt="pricing" />
-                                <div className="pricing-one__top">
-                                    <h3>Premium</h3>
-                                    <p><span>$</span>899</p>
-                                </div>
-                                <ul className="pricing-one__list list-unstyled">
-                                <li><i className="far fa-check" />Up to 10 Unique Pages Website</li>
-                                    <li><i className="far fa-check" />CMS / Admin Panel Integration</li>
-                                    <li><i className="far fa-check" />5+ Stock Photos & Banner Designs</li>
-                                    <li><i className="far fa-check" />FREE Social Media Integration</li>
-                                    <li><i className="far fa-check" />FREE Favicon Design</li>
-                                    <li><i className="far fa-check" />Unlimited Revisions</li>
-                                    <li><i className="far fa-check" />Cross Browser Compatible</li>
-                                    <li><i className="far fa-check" />Complete W3C Certified HTML</li>
-                                    <li><i className="far fa-check" />Website Initial Concepts in 48 Hours</li>
-                                    <li><i className="far fa-check" />Complete Design & Deployment</li>
-                                    <li><i className="far fa-check" />Custom, Interactive & Dynamic Web Design</li>
-                                    <li><i className="far fa-check" />Industry specified Team of Expert</li>
-                                    <li><i className="far fa-check" />Complete Design & Deployment</li>
-                                    <li><i className="far fa-check" />Complete Source Files</li>
-                                    <li><i className="far fa-check" />Dedicated Project Manager</li>
-                                    <li><i className="far fa-check" />100% Ownership Rights</li>
-                                    <li><i className="far fa-check" />100% Satisfaction Guarantee</li>
-                                    <li><i className="far fa-check" />Value Added Services</li>
-                                    <li><i className="far fa-check" />Mobile Responsive</li>
-                                    <li><i className="far fa-check" />CMS</li>
-                                </ul>
-                                <a href="#" className="thm-btn pricing-one__btn">Let's Chat <i className="fa fa-angle-double-right" /></a>{/* /.thm-btn pricing-one__btn */}
-                            </div>
-                        </div>
-                    </div>
+                    ))}
                 </div>
             </div>
         );

@@ -981,15 +981,8 @@
     }
 }
 
-@media(max-width: 375px) {
- 
 
-    .banner-one {
-      
-        height: 200px!important;
-    }
-}
-@media(max-width: 412px) {
+@media(max-width: 414px) {
  
 
     .banner-one {
@@ -1391,6 +1384,10 @@
     .banner-one .container-fluid {
         padding-top: 130px;
     }
+    .banner-one {
+      
+        height: 550px!important;
+    }
 
     .banner-one__content h3,
     .banner-one__content h3 span {
@@ -1558,3 +1555,4 @@
     
     
 }
+
