@@ -1556,3 +1556,30 @@
     
 }
 
+@media(max-width: 414px) {
+ 
+
+    .pricing-one__single {
+      
+        height: 750px;
+    }
+}
+@media(max-width: 430px) {
+ 
+
+    .pricing-one__single {
+      
+        height: 750px;
+    }
+}
+@media(max-width: 540px) {
+ 
+
+    .pricing-one__single {
+      
+        height: 750px;
+    }
+}
+
+
+

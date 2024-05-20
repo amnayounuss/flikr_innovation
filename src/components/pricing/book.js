@@ -1,6 +1,14 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 class Book extends Component {
+    openChat = (e) => {
+        e.preventDefault();
+        if (window.Tawk_API && window.Tawk_API.maximize) {
+            window.Tawk_API.maximize();
+        }
+    };
+
     render() {
         const publicUrl = process.env.PUBLIC_URL + '/';
         const imagealt = 'image';
@@ -24,7 +32,11 @@ class Book extends Component {
                     "Handle editing, proofreading, and formatting.",
                     "Receive a complimentary book cover as part of the package."
                 ],
-                image: "pricing-i-1-1.png"
+                image: "pricing-i-1-1.png",
+                buttons: [
+                    { text: "Order Now", class: "chatbtn1" },
+                    { text: "Let's Chat", class: "chatbtn" }
+                ]
             },
             {
                 name: "Regular",
@@ -45,7 +57,11 @@ class Book extends Component {
                     "Facilitate publishing on Amazon and Kindle platforms.",
                     "Release the book in three formats: eBook, Paperback, and Hardcover."
                 ],
-                image: "pricing-i-1-2.png"
+                image: "pricing-i-1-2.png",
+                buttons: [
+                    { text: "Order Now", class: "chatbtn1" },
+                    { text: "Let's Chat", class: "chatbtn" }
+                ]
             },
             {
                 name: "Premium",
@@ -69,7 +85,11 @@ class Book extends Component {
                     "Facilitate publishing on Amazon, Kindle, Barnes and Noble platforms.",
                     "Release the book in three formats: eBook, Paperback, and Hardcover."
                 ],
-                image: "pricing-i-1-3.png"
+                image: "pricing-i-1-3.png",
+                buttons: [
+                    { text: "Order Now", class: "chatbtn1" },
+                    { text: "Let's Chat", class: "chatbtn" }
+                ]
             }
         ];
 
@@ -93,7 +113,21 @@ class Book extends Component {
                                             </li>
                                         ))}
                                     </ul>
-                                    <a href="#" className="thm-btn pricing-one__btn">Let's Chat <i className="fa fa-angle-double-right" /></a>
+                                    <div className="row">
+                                        {plan.buttons.map((button, btnIdx) => (
+                                            <div className="col-md-6" key={btnIdx}>
+                                                {button.class === 'chatbtn' ? (
+                                                    <button onClick={this.openChat} className={`thm-btn pricing-one__btn ${button.class}`}>
+                                                        {button.text} <i className="fa fa-angle-double-right" />
+                                                    </button>
+                                                ) : (
+                                                    <Link to="/free-quote" className={`thm-btn pricing-one__btn ${button.class}`}>
+                                                        {button.text} <i className="fa fa-angle-double-right" />
+                                                    </Link>
+                                                )}
+                                            </div>
+                                        ))}
+                                    </div>
                                 </div>
                             </div>
                         </div>

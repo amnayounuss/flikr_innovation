@@ -69,8 +69,9 @@ class PricingV4 extends Component {
                 <a href="#influencer" className={`nav-link ${activeTab === 'influencer' ? 'active' : ''}`} data-toggle="tab">Marketing</a>
               </li>
               <li className="nav-item">
-                <a href="#content" className={`nav-link ${activeTab === 'content' ? 'active' : ''}`} data-toggle="tab">Writing</a>
+                <a href="#writing" className={`nav-link ${activeTab === 'writing' ? 'active' : ''}`} data-toggle="tab">Writing</a>
               </li>
+      
             </ul>
           </div>
 
@@ -102,8 +103,8 @@ class PricingV4 extends Component {
             <div className={`tab-pane ${activeTab === 'influencer' ? 'show active' : ''}`} id="influencer">
               <Influencer />
             </div>
-            <div className={`tab-pane ${activeTab === 'content' ? 'show active' : ''}`} id="content">
-              <Content />
+            <div className={`tab-pane ${activeTab === 'writing' ? 'show active' : ''}`} id="writing">
+              <Content/>
             </div>
           </div>
         </div>

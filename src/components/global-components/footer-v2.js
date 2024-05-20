@@ -42,7 +42,7 @@ class Footer_v2 extends Component {
 								<div className="footer-widget footer-widget__links">
 									<h3 className="footer-widget__title">Get In Touch</h3>{/* /.footer-widget__title */}
 									<ul className="footer-widget__links-list list-unstyled">
-										<li><Link to="/about">341 S Grand Ave <br/> Los Angeles, CA 90071, USA</Link></li>
+										<li><Link to="/about">1613 Voorhies Ave, Brooklyn, NY 11235, USA</Link></li>
 										<ul className="footer-widget__contact-list list-unstyled">
 											<li>
 												<i className="far fa-envelope" />

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
-import parse from 'html-react-parser';
 import emailjs from 'emailjs-com';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 class Contact extends Component {
 	constructor(props) {
@@ -11,10 +11,14 @@ class Contact extends Component {
 			email: '',
 			subject: '',
 			message: '',
-			popUpMessage: '', // New state for pop-up message
-			popUpVisible: false // New state for pop-up visibility
+			popUpMessage: '',
+			popUpVisible: false
 		};
 		this.formRef = React.createRef();
+	}
+
+	componentDidMount() {
+		AOS.init({ duration: 1500, easing: 'ease-in-out', once: true, disable: false });
 	}
 
 	handleInputChange = (e) => {
@@ -29,17 +33,15 @@ class Contact extends Component {
 			.then(
 				(result) => {
 					console.log('SUCCESS!', result.text);
-					// Reset the form fields after successful submission
 					this.setState({
 						name: '',
 						email: '',
 						subject: '',
 						message: '',
-						popUpMessage: 'Form submitted successfully!', // Set success message
-						popUpVisible: true // Show pop-up
+						popUpMessage: 'Form submitted successfully!',
+						popUpVisible: true
 					});
 
-					// Hide the pop-up after 3 seconds
 					setTimeout(() => {
 						this.setState({ popUpVisible: false });
 					}, 3000);
@@ -47,11 +49,10 @@ class Contact extends Component {
 				(error) => {
 					console.log('FAILED...', error.text);
 					this.setState({
-						popUpMessage: 'Failed to submit the form. Please try again.', // Set error message
-						popUpVisible: true // Show pop-up
+						popUpMessage: 'Failed to submit the form. Please try again.',
+						popUpVisible: true
 					});
 
-					// Hide the pop-up after 3 seconds
 					setTimeout(() => {
 						this.setState({ popUpVisible: false });
 					}, 3000);
@@ -61,11 +62,10 @@ class Contact extends Component {
 
 	render() {
 		const { popUpMessage, popUpVisible } = this.state;
-		let publicUrl = process.env.PUBLIC_URL + '/';
 
 		return (
 			<div>
-				<section className="contact-two">
+				<section className="contact-two" data-aos="fade-up">
 					<div className="container">
 						<div className="row">
 							<div className="col-lg-5">
@@ -79,7 +79,7 @@ class Contact extends Component {
 												<i className="far fa-map-marked" />
 												Address :
 											</div>
-											<p>341 S Grand Ave Los Angeles, CA 90071, USA</p>
+											<p>1613 Voorhies Ave, Brooklyn, NY 11235, USA</p>
 										</li>
 										<li>
 											<div className="contact-two__info-list-title">
@@ -124,8 +124,7 @@ class Contact extends Component {
 						</div>
 					</div>
 				</section>
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.6713336700063!2d-118.25461532518545!3d34.052301017728716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c64ccf95d9db%3A0xde9c42a303d21f43!2s341%20S%20Grand%20Ave%2C%20Los%20Angeles%2C%20CA%2090071%2C%20USA!5e0!3m2!1sen!2s!4v1715899880737!5m2!1sen!2s" className="google-map__contact" allowFullScreen />
-
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3029.987348449604!2d-73.95513588806578!3d40.58603467129363!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c244643c167dbb%3A0xd05a2549c713a252!2s1613%20Voorhies%20Ave%2C%20Brooklyn%2C%20NY%2011235%2C%20USA!5e0!3m2!1sen!2s!4v1716235709733!5m2!1sen!2s" className="google-map__contact" allowFullScreen />
 			</div>
 		);
 	}

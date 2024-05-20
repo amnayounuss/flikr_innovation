@@ -8285,13 +8285,16 @@ background-image: linear-gradient(90deg, #000000 0%, #FF0000 51%, #000000 100%);
 	position: relative;
 }
 .col-lg-4:hover .pricing-one__single {
-	background: linear-gradient(135deg, #000000, #333333);
-	
-  }
-  
-  .col-lg-4:hover .pricing-one__single .pricing-one__inner {
-	background: linear-gradient(135deg, #000000, #333333);
-  }
+    background: linear-gradient(135deg, #000000, #333333);
+}
+
+.col-lg-4:hover .pricing-one__single,
+.col-lg-4:hover .pricing-one__single h3,
+.col-lg-4:hover .pricing-one__single li,
+.col-lg-4:hover .pricing-one__single .pricing-one__btn  {
+    color: whitesmoke !important;
+}
+
 
 .pricing-one__list {
 	height: 300px;
@@ -9902,4 +9905,9 @@ background-image: linear-gradient(90deg, #000000 0%, #FF0000 51%, #000000 100%);
 .bannerslogan{
 	margin-top: 35px;
 	margin-bottom: 35px;
+	color: white;
 }
+
+
+
+/*  */

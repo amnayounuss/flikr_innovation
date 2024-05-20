@@ -1,8 +1,16 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const SocialMedia = () => {
     const publicUrl = process.env.PUBLIC_URL + '/';
     const imagealt = 'image';
+
+    const openChat = (e) => {
+        e.preventDefault();
+        if (window.Tawk_API && window.Tawk_API.maximize) {
+            window.Tawk_API.maximize();
+        }
+    };
 
     const plans = [
         {
@@ -21,7 +29,11 @@ const SocialMedia = () => {
                 "1 Facebook Event",
                 "Monthly Reporting"
             ],
-            image: "pricing-i-1-1.png"
+            image: "pricing-i-1-1.png",
+            buttons: [
+                { text: "Order Now", className: "chatbtn1" },
+                { text: "Let's Chat", className: "chatbtn" }
+            ]
         },
         {
             name: "Regular",
@@ -42,7 +54,11 @@ const SocialMedia = () => {
                 "2 Facebook Events",
                 "Monthly Reporting"
             ],
-            image: "pricing-i-1-2.png"
+            image: "pricing-i-1-2.png",
+            buttons: [
+                { text: "Order Now", className: "chatbtn1" },
+                { text: "Let's Chat", className: "chatbtn" }
+            ]
         },
         {
             name: "Premium",
@@ -63,7 +79,11 @@ const SocialMedia = () => {
                 "3 Facebook Events",
                 "Monthly Reporting"
             ],
-            image: "pricing-i-1-3.png"
+            image: "pricing-i-1-3.png",
+            buttons: [
+                { text: "Order Now", className: "chatbtn1" },
+                { text: "Let's Chat", className: "chatbtn" }
+            ]
         }
     ];
 
@@ -87,7 +107,21 @@ const SocialMedia = () => {
                                         </li>
                                     ))}
                                 </ul>
-                                <a href="#" className="thm-btn pricing-one__btn">Let's Chat <i className="fa fa-angle-double-right" /></a>
+                                <div className="row">
+                                    {plan.buttons.map((button, idx) => (
+                                        <div className="col-md-6" key={idx}>
+                                            {button.className === 'chatbtn' ? (
+                                                <button onClick={openChat} className={`thm-btn pricing-one__btn ${button.className}`}>
+                                                    {button.text}<i className="fa fa-angle-double-right" />
+                                                </button>
+                                            ) : (
+                                                <Link to="/free-quote" className={`thm-btn pricing-one__btn ${button.className}`}>
+                                                    {button.text}<i className="fa fa-angle-double-right" />
+                                                </Link>
+                                            )}
+                                        </div>
+                                    ))}
+                                </div>
                             </div>
                         </div>
                     </div>

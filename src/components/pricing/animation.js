@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+
 
 class Animation extends Component {
     render() {
@@ -19,7 +21,11 @@ class Animation extends Component {
                     "Full HD Video Format",
                     "Dedicated Account Manager",
                 ],
-                image: "pricing-i-1-1.png"
+                image: "pricing-i-1-1.png",
+                buttons: [
+                    { text: "Order Now", class: "chatbtn1" },
+                    { text: "Let's Chat", class: "chatbtn" }
+                ]
             },
             {
                 name: "Regular",
@@ -38,7 +44,11 @@ class Animation extends Component {
                     "Full HD Video Format",
                     "Dedicated Account Manager",
                 ],
-                image: "pricing-i-1-2.png"
+                image: "pricing-i-1-2.png",
+                buttons: [
+                    { text: "Order Now", class: "chatbtn1" },
+                    { text: "Let's Chat", class: "chatbtn" }
+                ]
             },
             {
                 name: "Premium",
@@ -57,9 +67,19 @@ class Animation extends Component {
                     "Full HD Video Format",
                     "Dedicated Account Manager",
                 ],
-                image: "pricing-i-1-3.png"
+                image: "pricing-i-1-3.png",
+                buttons: [
+                    { text: "Order Now", class: "chatbtn1" },
+                    { text: "Let's Chat", class: "chatbtn" }
+                ]
             }
         ];
+        const openChat = (e) => {
+            e.preventDefault();
+            if (window.Tawk_API && window.Tawk_API.maximize) {
+                window.Tawk_API.maximize();
+            }
+        };
 
         return (
             <div className="tab-pane show active animated fadeInUp" id="animation">
@@ -81,7 +101,21 @@ class Animation extends Component {
                                             </li>
                                         ))}
                                     </ul>
-                                    <a href="#" className="thm-btn pricing-one__btn">Let's Chat <i className="fa fa-angle-double-right" /></a>
+                                    <div className="row">
+                                        {plan.buttons.map((button, btnIdx) => (
+                                            <div className="col-md-6" key={btnIdx}>
+                                                {button.class === 'chatbtn' ? (
+                                                    <button onClick={openChat} className={`thm-btn pricing-one__btn ${button.class}`}>
+                                                        {button.text} <i className="fa fa-angle-double-right" />
+                                                    </button>
+                                                ) : (
+                                                    <Link to="/free-quote" className={`thm-btn pricing-one__btn ${button.class}`}>
+                                                        {button.text} <i className="fa fa-angle-double-right" />
+                                                    </Link>
+                                                )}
+                                            </div>
+                                        ))}
+                                    </div>
                                 </div>
                             </div>
                         </div>

@@ -1,6 +1,14 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 class Website extends Component {
+    openChat = (e) => {
+        e.preventDefault();
+        if (window.Tawk_API && window.Tawk_API.maximize) {
+            window.Tawk_API.maximize();
+        }
+    };
+
     render() {
         const publicUrl = process.env.PUBLIC_URL + '/';
         const imagealt = 'image';
@@ -29,7 +37,11 @@ class Website extends Component {
                     "Mobile Responsive",
                     "CMS"
                 ],
-                image: "pricing-i-1-1.png"
+                image: "pricing-i-1-1.png",
+                buttons: [
+                    { text: "Order Now", className: "chatbtn1" },
+                    { text: "Let's Chat", className: "chatbtn" }
+                ]
             },
             {
                 name: "Regular",
@@ -52,7 +64,11 @@ class Website extends Component {
                     "Mobile Responsive",
                     "CMS"
                 ],
-                image: "pricing-i-1-2.png"
+                image: "pricing-i-1-2.png",
+                buttons: [
+                    { text: "Order Now", className: "chatbtn1" },
+                    { text: "Let's Chat", className: "chatbtn" }
+                ]
             },
             {
                 name: "Premium",
@@ -79,7 +95,11 @@ class Website extends Component {
                     "Mobile Responsive",
                     "CMS"
                 ],
-                image: "pricing-i-1-3.png"
+                image: "pricing-i-1-3.png",
+                buttons: [
+                    { text: "Order Now", className: "chatbtn1" },
+                    { text: "Let's Chat", className: "chatbtn" }
+                ]
             }
         ];
 
@@ -103,7 +123,21 @@ class Website extends Component {
                                             </li>
                                         ))}
                                     </ul>
-                                    <a href="#" className="thm-btn pricing-one__btn">Let's Chat <i className="fa fa-angle-double-right" /></a>
+                                    <div className="row">
+                                        {plan.buttons.map((button, idx) => (
+                                            <div className="col-md-6" key={idx}>
+                                                {button.className === 'chatbtn' ? (
+                                                    <button onClick={this.openChat} className={`thm-btn pricing-one__btn ${button.className}`}>
+                                                        {button.text}<i className="fa fa-angle-double-right" />
+                                                    </button>
+                                                ) : (
+                                                    <Link to="/free-quote" className={`thm-btn pricing-one__btn ${button.className}`}>
+                                                        {button.text}<i className="fa fa-angle-double-right" />
+                                                    </Link>
+                                                )}
+                                            </div>
+                                        ))}
+                                    </div>
                                 </div>
                             </div>
                         </div>

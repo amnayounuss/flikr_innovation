@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Logo = () => {
     const publicUrl = process.env.PUBLIC_URL + '/';
@@ -74,6 +75,13 @@ const Logo = () => {
         }
     ];
 
+    const openChat = (e) => {
+        e.preventDefault();
+        if (window.Tawk_API && window.Tawk_API.maximize) {
+            window.Tawk_API.maximize();
+        }
+    };
+
     return (
         <div className="tab-pane show active animated fadeInUp" id="logo">
             <div className="row">
@@ -87,17 +95,25 @@ const Logo = () => {
                                     <p><span>$</span>{plan.price}</p>
                                 </div>
                                 <ul className="pricing-one__list list-unstyled">
-                                        {plan.features.map((feature, idx) => (
-                                            <li key={idx} style={{ display: 'flex', alignItems: 'center' }}>
-                                                <div><i className="far fa-check" /></div>
-                                                <div>{feature}</div>
-                                            </li>
-                                        ))}
-                                    </ul>
+                                    {plan.features.map((feature, idx) => (
+                                        <li key={idx} style={{ display: 'flex', alignItems: 'center' }}>
+                                            <div><i className="far fa-check" /></div>
+                                            <div>{feature}</div>
+                                        </li>
+                                    ))}
+                                </ul>
                                 <div className="row">
                                     {plan.buttons.map((button, btnIdx) => (
                                         <div className="col-md-6" key={btnIdx}>
-                                            <a href="#" className={`thm-btn pricing-one__btn ${button.class}`}>{button.text} <i className="fa fa-angle-double-right" /></a>
+                                            {button.class === 'chatbtn' ? (
+                                                <button onClick={openChat} className={`thm-btn pricing-one__btn ${button.class}`}>
+                                                    {button.text} <i className="fa fa-angle-double-right" />
+                                                </button>
+                                            ) : (
+                                                <Link to="/free-quote" className={`thm-btn pricing-one__btn ${button.class}`}>
+                                                    {button.text} <i className="fa fa-angle-double-right" />
+                                                </Link>
+                                            )}
                                         </div>
                                     ))}
                                 </div>

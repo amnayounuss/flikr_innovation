@@ -92,7 +92,7 @@ class WhyChooseUs extends Component {
                                     </div>
                                     <div className="service-one__top-content">
                                         <h3><Link to="/portfolio-standard" data-aos="fade-down">Designing</Link></h3>
-                                        <p data-aos="fade-up">Graphic Designing</p>
+                                        <p data-aos="fade-up">Graphic Designing  </p>
                                     </div>
                                 </div>
                                 <p data-aos="fade-down">Flikr Innovation's graphic design services ensure your brand

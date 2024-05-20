@@ -1,6 +1,14 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 class Printing extends Component {
+    openChat = (e) => {
+        e.preventDefault();
+        if (window.Tawk_API && window.Tawk_API.maximize) {
+            window.Tawk_API.maximize();
+        }
+    };
+
     render() {
         const publicUrl = process.env.PUBLIC_URL + '/';
         const imagealt = 'image';
@@ -97,9 +105,17 @@ class Printing extends Component {
                                         ))}
                                     </ul>
                                     <div className="row">
-                                        {plan.buttons.map((button, btnIdx) => (
-                                            <div className="col-md-6" key={btnIdx}>
-                                                <a href="#" className={`thm-btn pricing-one__btn ${button.className}`}>{button.text} <i className="fa fa-angle-double-right" /></a>
+                                        {plan.buttons.map((button, idx) => (
+                                            <div className="col-md-6" key={idx}>
+                                                {button.className === 'chatbtn' ? (
+                                                    <button onClick={this.openChat} className={`thm-btn pricing-one__btn ${button.className}`}>
+                                                        {button.text}<i className="fa fa-angle-double-right" />
+                                                    </button>
+                                                ) : (
+                                                    <Link to="/free-quote" className={`thm-btn pricing-one__btn ${button.className}`}>
+                                                        {button.text}<i className="fa fa-angle-double-right" />
+                                                    </Link>
+                                                )}
                                             </div>
                                         ))}
                                     </div>
