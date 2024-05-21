@@ -21,7 +21,7 @@ class Video extends Component {
                     <div key={video.id} className="col-lg-3 col-md-6 col-sm-12 video masonary-item">
                         <div className="portfolio-three__single">
                             <div className="portfolio-three__image">
-                                <video width="100%" controls>
+                                <video width="100%" controls autoPlay muted loop>
                                     <source src={publicUrl + "assets/images/portfolio/video/" + video.video} type="video/mp4" />
                                     Your browser does not support the video tag.
                                 </video>
