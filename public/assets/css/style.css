@@ -7805,7 +7805,7 @@ background-image: linear-gradient(90deg, #000000 0%, #FF0000 51%, #000000 100%);
 
 }
 
-.side-menu__social .fa-pinterest-p {
+.side-menu__social .fa-linkedin {
 	background-image: -webkit-gradient(linear, left top, right top, from(#000000), color-stop(51%, #FF0000), to(#000000));
 background-image: linear-gradient(90deg, #000000 0%, #FF0000 51%, #000000 100%);
 

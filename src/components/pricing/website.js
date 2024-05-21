@@ -16,7 +16,7 @@ class Website extends Component {
         const plans = [
             {
                 name: "Startup",
-                price: 399,
+                price: 499,
                 features: [
                     "3 Page Website ",
                     "Custom Layout Design",
@@ -45,7 +45,7 @@ class Website extends Component {
             },
             {
                 name: "Regular",
-                price: 499,
+                price: 899,
                 features: [
                     "5 Page Website",
                     "Custom Layout Design",
@@ -72,7 +72,7 @@ class Website extends Component {
             },
             {
                 name: "Premium",
-                price: 899,
+                price: 1499,
                 features: [
                     "Up to 10 Unique Pages Website",
                     "CMS / Admin Panel Integration",

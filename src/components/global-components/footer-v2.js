@@ -58,7 +58,7 @@ class Footer_v2 extends Component {
 										<a target='blank' href="https://www.facebook.com/Flikrinnovation"><i className="fab fa-facebook-f" /></a>
 										<a target='blank' href="/"><i className="fab fa-twitter" /></a>
 										<a target='blank' href="https://www.instagram.com/flikr.innovation/"><i className="fab fa-brands fa-instagram" /></a>
-										<a  href="/"><i className="fab fa-brands fa-pinterest" /></a>
+										<a href="https://www.linkedin.com/company/flikr-innovation"><i className="fab fa-brands fa-linkedin" /></a>
 									</div>{/* /.footer-widget__social */}
 								</div>{/* /.footer-widget footer-widget__post */}
 							</div>{/* /.col-lg-3 */}

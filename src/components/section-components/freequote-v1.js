@@ -24,7 +24,7 @@ class FreeQuoteV1 extends Component {
         e.preventDefault();
 
         emailjs
-            .sendForm('service_f2pd4c1', 'template_zzchn6m', this.formRef.current, 'DvbxUaRDB9psE-mBX')
+            .sendForm('service_4m6ok65', 'template_5xipyw8', this.formRef.current, 'vC6T0jDA8CeeqTtU8')
             .then(
                 (result) => {
                     console.log('SUCCESS!', result.text);

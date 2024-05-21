@@ -17,7 +17,7 @@ class Influencer extends Component {
             {
                 name: "Startup",
                 description: "Ideal for small businesses or startups looking for targeted exposure.",
-                price: 99,
+                price: 449,
                 features: [
                     "1 Instagram post (1 image or video)",
                     "1 Facebook post (with targeted audience boost)",
@@ -37,7 +37,7 @@ class Influencer extends Component {
             {
                 name: "Regular",
                 description: "Suitable for medium-sized businesses seeking broader audience engagement.",
-                price: 299,
+                price: 749,
                 features: [
                     "2 Instagram posts (with stories and swipe-up links)",
                     "2 Facebook posts (with targeted audience boost)",
@@ -57,7 +57,7 @@ class Influencer extends Component {
             {
                 name: "Premium",
                 description: "For large corporations or extensive campaigns aiming for maximum visibility.",
-                price: 599,
+                price: 1199,
                 features: [
                     "5 Instagram posts (with carousel albums and IGTV videos)",
                     "5 Facebook posts (with sponsored content and interactive polls)",

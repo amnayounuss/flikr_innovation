@@ -10,7 +10,7 @@ class Animation extends Component {
         const plans = [
             {
                 name: "Startup",
-                price: 749,
+                price: 349,
                 features: [
                     "Custom Artwork",
                     "Hand-Drawn Character Illustrations",
@@ -29,7 +29,7 @@ class Animation extends Component {
             },
             {
                 name: "Regular",
-                price: 999,
+                price: 549,
                 features: [
                     "Custom Artwork",
                     "Script Writing",
@@ -52,7 +52,7 @@ class Animation extends Component {
             },
             {
                 name: "Premium",
-                price: 1499,
+                price: 749,
                 features: [
                     "Custom Artwork",
                     "Script Writing",

@@ -16,7 +16,7 @@ class MobileApp extends Component {
         const plans = [
             {
                 name: "Startup",
-                price: 1000,
+                price: 1500,
                 features: [
                     "Around 30 screens or 100 days effort",
                     "Around 30 Get data API calls & ~10 Write back / Update calls",
@@ -33,7 +33,7 @@ class MobileApp extends Component {
             },
             {
                 name: "Regular",
-                price: 1800,
+                price: 2000,
                 features: [
                     "Around 100 Screens or 320 Days effort, 30% being complex",
                     "Around 50 Get data API calls & ~20 Write back / Update calls",
@@ -54,7 +54,7 @@ class MobileApp extends Component {
             },
             {
                 name: "Premium",
-                price: 2200,
+                price: 3000,
                 features: [
                     "Around 200 Screens or 975 days effort, 50% being complex",
                     "Around 100 Get data API calls & ~50 Write back / Update calls",
