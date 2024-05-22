@@ -79,21 +79,21 @@ class Contact extends Component {
 												<i className="far fa-map-marked" />
 												Address :
 											</div>
-											<p>1613 Voorhies Ave, Brooklyn, NY 11235, USA</p>
+											<p> <a target='blank' href='https://www.google.com/maps/place/1613+Voorhies+Ave,+Brooklyn,+NY+11235,+USA'> 1613 Voorhies Ave, Brooklyn, NY 11235, USA </a> </p>
 										</li>
 										<li>
 											<div className="contact-two__info-list-title">
 												<i className="far fa-phone" />
 												Call Us :
 											</div>
-											<p><a href="tel:08964712365">+1 (917) 732 0181</a></p>
+											<p><a href="tel: +1 (917) 732 0181">+1 (917) 732 0181</a></p>
 										</li>
 										<li>
 											<div className="contact-two__info-list-title">
 												<i className="far fa-envelope" />
 												Email Us :
 											</div>
-											<p><a href="mailto:support@gmail.com">info@flikrinnovation.com</a></p>
+											<p><a href="mailto: info@flikrinnovation.com">info@flikrinnovation.com</a></p>
 										</li>
 									</ul>
 								</div>

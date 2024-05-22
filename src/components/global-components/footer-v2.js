@@ -42,15 +42,19 @@ class Footer_v2 extends Component {
 								<div className="footer-widget footer-widget__links">
 									<h3 className="footer-widget__title">Get In Touch</h3>{/* /.footer-widget__title */}
 									<ul className="footer-widget__links-list list-unstyled">
-										<li><Link to="/about">1613 Voorhies Ave, Brooklyn, NY 11235, USA</Link></li>
+										{/* <li><Link to="/about">1613 Voorhies Ave, Brooklyn, NY 11235, USA</Link></li> */}
+										<li><a target='blank' href='https://www.google.com/maps/place/1613+Voorhies+Ave,+Brooklyn,+NY+11235,+USA'>  1613 Voorhies Ave, Brooklyn, NY 11235, USA </a></li>
+
+										
 										<ul className="footer-widget__contact-list list-unstyled">
 											<li>
 												<i className="far fa-envelope" />
-												<a href="mailto:support@gmail.com">info@flikrinnovation.com</a>
+												<a href="mailto: info@flikrinnovation.com">info@flikrinnovation.com</a>
+												
 											</li>
 											<li>
 												<i className="far fa-phone" />
-												<a href="tel:+823-654-445-64">+1 (917) 732 0181</a>
+												<a href="tel: +1 (917) 732 0181">+1 (917) 732 0181</a>
 											</li>
 										</ul>{/* /.footer-widget__contact-list */}
 									</ul>{/* /.footer-widget__links-list */}
@@ -58,7 +62,7 @@ class Footer_v2 extends Component {
 										<a target='blank' href="https://www.facebook.com/Flikrinnovation"><i className="fab fa-facebook-f" /></a>
 										<a target='blank' href="/"><i className="fab fa-twitter" /></a>
 										<a target='blank' href="https://www.instagram.com/flikr.innovation/"><i className="fab fa-brands fa-instagram" /></a>
-										<a href="https://www.linkedin.com/company/flikr-innovation"><i className="fab fa-brands fa-linkedin" /></a>
+										<a target='blank' href="https://www.linkedin.com/company/flikr-innovation"><i className="fab fa-brands fa-linkedin" /></a>
 									</div>{/* /.footer-widget__social */}
 								</div>{/* /.footer-widget footer-widget__post */}
 							</div>{/* /.col-lg-3 */}
